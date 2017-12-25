@@ -1,4 +1,48 @@
+/*BASIC TEXT CALCULATOR STYLE */
+
+.calculator {
+  text-align: center;
+}
+
 .tertiary-title {
-  font-size: $innerTitleSize;
-  color: $innerTitleColor;
+  font-size: $thirdTitleSize;
+  color: $colorPrimary;
+}
+
+.fourth-title {
+  font-size: $fourthTitleSize;
+  color: $colorTertiary;
+  padding-top: 15%;
+}
+
+
+
+/* BACKGROUND CALCULATOR STYLE */
+
+.form-calculator {
+  background-color: $colorSecondary;
+}
+
+
+/* FORM CALCULATOR STYLE */
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 20%;
+}
+
+input {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  text-align: center;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid $colorQuaternary;
+}
+
+input::placeholder {
+  color: $colorQuaternary;
+  text-transform: uppercase;
 }

@@ -1,6 +1,63 @@
-/* --------- CORE ---------  *//* --------- COMPONENTS ---------  *//* FONT SIZE *//* FONT COLOR *//* --------- LAYOUT /* --------- */.tertiary-title {
+/* --------- CORE ---------  */body {
+  font-family: Ubuntu, sans-serif;
+}/* amarillo *//* gris claro *//* negro *//* gris oscuro *//* --------- COMPONENTS ---------  *//* FONT FAMILY */body {
+  font-family: Ubuntu, sans-serif;
+}/* FONT SIZE *//* --------- LAYOUT /* --------- *//*BASIC TEXT CALCULATOR STYLE */.calculator {
+  text-align: center;
+}
+
+.tertiary-title {
   font-size: 35px;
-  color: red;
+  color: #ffcd49;
+}
+
+.fourth-title {
+  font-size: 24px;
+  color: #000;
+  padding-top: 15%;
+}/* BACKGROUND CALCULATOR STYLE */.form-calculator {
+  background-color: #f0f0f0;
+}/* FORM CALCULATOR STYLE */form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0 20%;
+}
+
+input {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  text-align: center;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #bbbbbb;
+}
+
+input::-webkit-input-placeholder {
+  color: #bbbbbb;
+  text-transform: uppercase;
+}
+
+input:-ms-input-placeholder {
+  color: #bbbbbb;
+  text-transform: uppercase;
+}
+
+input::-ms-input-placeholder {
+  color: #bbbbbb;
+  text-transform: uppercase;
+}
+
+input::placeholder {
+  color: #bbbbbb;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=main.css.map */
