@@ -1,6 +1,8 @@
+/* --------- CORE ---------  */
 @import 'core/settings';
 
-body {
-	background: url('../images/logo-adalab-80px.png') center center no-repeat;
-	height: 100vh;
-}
+/* --------- COMPONENTS ---------  */
+@import 'components/typography-calculator';
+
+/* --------- LAYOUT /* --------- */
+@import 'layout/calculator';
