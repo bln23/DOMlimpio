@@ -6,8 +6,8 @@
 }
 
 .info-calculator {
-  padding-left: 3.5%;
-  padding-right: 3.5%;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
 .tertiary-title {
@@ -19,20 +19,23 @@
 .fourth-title {
   font-size: $fourthTitleSize;
   color: $colorTertiary;
-  padding-top: 15%;
   margin-top: 0;
   margin-bottom: 2%;
 }
 
 
 .calc-subtitle {
-  padding-top: 0;
   font-weight: $normalFontWeight;
-  margin-bottom: 15%;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+.intro-calc-data {
+  padding-top: 15%;
 }
 
 .hour-value-title {
-  padding-top: 5%;
+  padding-top: 10%;
 }
 
 .salary-value-title {
@@ -41,11 +44,12 @@
 
 .hour-value,
 .salary-value {
-  margin: 0;
+  margin: 2%;
 }
 
 .salary-value {
-  padding-bottom: 2.5%;
+  padding-bottom: 4%;
+  margin-bottom:0;
 }
 
 /* BACKGROUND CALCULATOR STYLE */
