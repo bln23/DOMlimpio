@@ -6,11 +6,10 @@
 body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p {
   margin: 0;
   height: 100;
+  font-family: Ubuntu, sans-serif;
 }/* --------- CORE ---------  */body {
   font-family: Ubuntu, sans-serif;
-}/* amarillo *//* gris claro *//* negro *//* gris oscuro *//* --------- COMPONENTS ---------  *//* FONT FAMILY */body {
-  font-family: Ubuntu, sans-serif;
-}/* FONT SIZE *//* FONT WEIGHT */.submit-input {
+}/* amarillo *//* gris claro *//* negro *//* gris oscuro *//* --------- COMPONENTS ---------  *//* FONT FAMILY *//* FONT SIZE *//* FONT WEIGHT */.submit-input {
   background-color: #ffcd49;
   color: #000;
   cursor: pointer;
@@ -21,8 +20,6 @@ body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p {
 }
 
 .info-calculator {
-  padding-left: 3%;
-  padding-right: 3%;
   margin-bottom: 10%;
 }
 
@@ -34,13 +31,13 @@ body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p {
 .fourth-title {
   font-size: 1.125rem;
   color: #000;
-  margin-top: 0;
-  margin-bottom: 2%;
 }
 
 .calc-subtitle {
   font-weight: 500;
   margin-top: 5%;
+  margin-top: 0;
+  margin-bottom: 2%;
 }
 
 .about-calculator-function {
@@ -102,7 +99,65 @@ input::placeholder {
   padding-top: 4%;
 }
 
-@media all and (min-width: 768px) {
+.accordion {
+  background-color: #ffcd49;
+  color: #000;
+  cursor: pointer;
+  padding: 20px;
+  width: 100%;
+  border: none;
+  border-bottom: 1.5px solid #000;
+  text-align: left;
+  outline: none;
+  font-size: 1.125rem;
+  font-weight: 500;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.accordion:hover {
+  background-color: #F6AE2D;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+}/*.accordion {
+background-color: $colorPrimary;
+color: $colorTertiary;
+cursor: pointer;
+padding: 25px;
+width: 100%;
+border:none;
+border-bottom: 1.5px solid $colorTertiary;
+text-align: left;
+outline: none;
+font-size: $fourthTitleSize;
+font-weight: $mediumFontWeight;
+transition: 0.4s;
+}
+
+.active, .accordion:hover {
+background-color: #F6AE2D;
+}
+
+.hidden {
+display: none;
+}
+
+.panel {
+padding: 0 18px;
+background-color: white;
+display: none;
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.2s ease-out;
+
+}*/@media all and (min-width: 768px) {
   .info-calculator {
     margin-bottom: 5%;
   }
