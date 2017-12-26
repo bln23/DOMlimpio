@@ -59,14 +59,16 @@ form {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin: 0 25%;
 }
 
 input {
-  margin-bottom: 2%;
-  text-align: center;
+  width: 50%;
+  margin-bottom: 2.5%;
+  margin-top: 2%;
   padding: 15px 20px;
-  margin: 8px 0;
+  -ms-flex-item-align: center;
+  align-self: center;
+  text-align: center;
   border: 1px solid #bbbbbb;
 }
 
@@ -88,16 +90,12 @@ input::-ms-input-placeholder {
 input::placeholder {
   color: #bbbbbb;
   text-transform: uppercase;
-}/* ANSWER STYLE */.intro-calc-data {
-  margin-bottom: 5%;
-}
-
-.answer-calculator {
-  padding-top: 10%;
+}/* ANSWER STYLE */.answer-calculator {
+  padding-top: 8%;
 }
 
 .salary-value-title {
-  padding-top: 2%;
+  padding-top: 4%;
 }
 
 @media all and (min-width: 768px) {
@@ -110,12 +108,14 @@ input::placeholder {
     padding-bottom: 3%;
   }
 
-  .intro-calc-data {
-    padding-top: 5%;
+  input {
+    width: 25%;
+    margin-bottom: 1%;
+    margin-top: 0.5%;
   }
 
   .answer-calculator {
-    padding-top: 5%;
+    padding-top: 3.5%;
   }
 }
 
@@ -124,13 +124,23 @@ input::placeholder {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: cene;
-    -ms-flex-pack: cene;
-    justify-content: cene;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  input {
+    width: 100%;
+    margin-bottom: 5%;
+    margin-top: 4.5%;
+  }
+
+  .answer-calculator {
+    margin-left: 15%;
+  }
+
+  .salary-value-title {
+    padding-top: 10%;
   }
 }
 
