@@ -41,30 +41,14 @@ body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p {
   font-weight: 400;
   margin-top: 5%;
   margin-bottom: 10%;
-}
-
-.intro-calc-data {
-  padding-top: 15%;
-}
-
-.hour-value-title {
-  padding-top: 10%;
-}
-
-.salary-value-title {
-  padding-top: 2%;
-}
-
-.hour-value,.salary-value {
-  margin: 2%;
-}
-
-.salary-value {
-  padding-bottom: 4%;
-  margin-bottom: 0;
 }/* BACKGROUND CALCULATOR STYLE */.form-calculator {
   background-color: #f0f0f0;
-}/* FORM CALCULATOR STYLE */form {
+}/* FORM CALCULATOR STYLE */.form-calculator {
+  padding-top: 10%;
+  padding-bottom: 7%;
+}
+
+form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -104,6 +88,50 @@ input::-ms-input-placeholder {
 input::placeholder {
   color: #bbbbbb;
   text-transform: uppercase;
+}/* ANSWER STYLE */.intro-calc-data {
+  margin-bottom: 5%;
+}
+
+.answer-calculator {
+  padding-top: 10%;
+}
+
+.salary-value-title {
+  padding-top: 2%;
+}
+
+@media all and (min-width: 768px) {
+  .calc-subtitle {
+    margin-bottom: 5%;
+  }
+
+  .form-calculator {
+    padding-top: 5%;
+    padding-bottom: 3%;
+  }
+
+  .intro-calc-data {
+    padding-top: 5%;
+  }
+
+  .answer-calculator {
+    padding-top: 5%;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .form-calculator {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: cene;
+    -ms-flex-pack: cene;
+    justify-content: cene;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

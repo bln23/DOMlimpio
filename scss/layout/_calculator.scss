@@ -28,29 +28,12 @@
   font-weight: $normalFontWeight;
   margin-top: 5%;
   margin-bottom: 10%;
+  @media all and (min-width:768px) {
+    margin-bottom: 5%;
+  }
 }
 
-.intro-calc-data {
-  padding-top: 15%;
-}
 
-.hour-value-title {
-  padding-top: 10%;
-}
-
-.salary-value-title {
-  padding-top: 2%;
-}
-
-.hour-value,
-.salary-value {
-  margin: 2%;
-}
-
-.salary-value {
-  padding-bottom: 4%;
-  margin-bottom:0;
-}
 
 /* BACKGROUND CALCULATOR STYLE */
 
@@ -60,6 +43,20 @@
 
 
 /* FORM CALCULATOR STYLE */
+
+.form-calculator {
+  padding-top: 10%;
+  padding-bottom: 7%;
+  @media all and (min-width:768px) {
+    padding-top: 5%;
+    padding-bottom: 3%;
+  }
+  @media all and (min-width:1024px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: cene
+  }
+}
 
 form {
   display: flex;
@@ -79,4 +76,24 @@ input {
 input::placeholder {
   color: $colorQuaternary;
   text-transform: uppercase;
+}
+
+/* ANSWER STYLE */
+
+.intro-calc-data {
+  margin-bottom: 5%;
+  @media all and (min-width:768px) {
+    padding-top: 5%;
+  }
+}
+
+.answer-calculator {
+  padding-top: 10%;
+  @media all and (min-width:768px) {
+    padding-top: 5%;
+  }
+}
+
+.salary-value-title {
+  padding-top: 2%;
 }
