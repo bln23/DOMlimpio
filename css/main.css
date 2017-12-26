@@ -1,9 +1,27 @@
-/* --------- CORE ---------  */body {
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,body {
+  margin: 0;
+}/* --------- CORE ---------  */body {
   font-family: Ubuntu, sans-serif;
 }/* amarillo *//* gris claro *//* negro *//* gris oscuro *//* --------- COMPONENTS ---------  *//* FONT FAMILY */body {
   font-family: Ubuntu, sans-serif;
-}/* FONT SIZE *//* --------- LAYOUT /* --------- *//*BASIC TEXT CALCULATOR STYLE */.calculator {
+}/* FONT SIZE *//* FONT WEIGHT */.submit-input {
+  background-color: #ffcd49;
+  color: #000;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+}/* --------- LAYOUT /* --------- *//*BASIC CALCULATOR STYLE (text and box parameters) */.calculator {
   text-align: center;
+}
+
+.info-calculator {
+  padding-left: 3.5%;
+  padding-right: 3.5%;
 }
 
 .tertiary-title {
@@ -12,9 +30,33 @@
 }
 
 .fourth-title {
-  font-size: 24px;
+  font-size: 20px;
   color: #000;
   padding-top: 15%;
+  margin-top: 0;
+  margin-bottom: 2%;
+}
+
+.calc-subtitle {
+  padding-top: 0;
+  font-weight: 400;
+  margin-bottom: 15%;
+}
+
+.hour-value-title {
+  padding-top: 5%;
+}
+
+.salary-value-title {
+  padding-top: 2%;
+}
+
+.hour-value,.salary-value {
+  margin: 0;
+}
+
+.salary-value {
+  padding-bottom: 2.5%;
 }/* BACKGROUND CALCULATOR STYLE */.form-calculator {
   background-color: #f0f0f0;
 }/* FORM CALCULATOR STYLE */form {
@@ -28,14 +70,13 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin: 0 20%;
+  margin: 0 25%;
 }
 
 input {
-  margin-top: 2%;
   margin-bottom: 2%;
   text-align: center;
-  padding: 12px 20px;
+  padding: 15px 20px;
   margin: 8px 0;
   border: 1px solid #bbbbbb;
 }

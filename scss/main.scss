@@ -1,9 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+}
+
+
 /* --------- CORE ---------  */
 @import 'core/settings';
 @import 'core/variables-colors';
 
 /* --------- COMPONENTS ---------  */
 @import 'components/typography-calculator';
+@import 'components/buttons';
 
 /* --------- LAYOUT /* --------- */
 @import 'layout/calculator';

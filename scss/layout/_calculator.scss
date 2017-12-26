@@ -1,7 +1,13 @@
-/*BASIC TEXT CALCULATOR STYLE */
+
+/*BASIC CALCULATOR STYLE (text and box parameters) */
 
 .calculator {
   text-align: center;
+}
+
+.info-calculator {
+  padding-left: 3.5%;
+  padding-right: 3.5%;
 }
 
 .tertiary-title {
@@ -9,13 +15,38 @@
   color: $colorPrimary;
 }
 
+
 .fourth-title {
   font-size: $fourthTitleSize;
   color: $colorTertiary;
   padding-top: 15%;
+  margin-top: 0;
+  margin-bottom: 2%;
 }
 
 
+.calc-subtitle {
+  padding-top: 0;
+  font-weight: $normalFontWeight;
+  margin-bottom: 15%;
+}
+
+.hour-value-title {
+  padding-top: 5%;
+}
+
+.salary-value-title {
+  padding-top: 2%;
+}
+
+.hour-value,
+.salary-value {
+  margin: 0;
+}
+
+.salary-value {
+  padding-bottom: 2.5%;
+}
 
 /* BACKGROUND CALCULATOR STYLE */
 
@@ -30,14 +61,13 @@ form {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: 0 20%;
+  margin: 0 25%;
 }
 
 input {
-  margin-top: 2%;
   margin-bottom: 2%;
   text-align: center;
-  padding: 12px 20px;
+  padding: 15px 20px;
   margin: 8px 0;
   border: 1px solid $colorQuaternary;
 }
