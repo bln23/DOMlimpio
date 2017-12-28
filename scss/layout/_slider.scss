@@ -1,7 +1,27 @@
+.slider {
+  @media all and (min-width:768px) {
+    margin-bottom: 10%;
+  }
+  @media all and (min-width:1024px) {
+    background-color: $colorSecondary;
+    margin-bottom: 10%;
+  }
+}
+
 .title-slider {
   text-align: center;
   background-color: white;
   padding: 70px;
+  @media all and (min-width:768px) {
+    background-color: $colorSecondary;
+    margin-top: 8%;
+    padding: 50px;
+  }
+  @media all and (min-width:1024px) {
+    background-color: $colorSecondary;
+    margin-top: 8%;
+    padding: 50px;
+  }
 }
 
 .testimony-title {
@@ -20,13 +40,15 @@ li {
 
 .testimonys{
   background-color: $colorSecondary;
-  padding: 30px;
+  padding:14%;
   margin: 0;
   @media all and (min-width:768px) {
     display: flex;
+    padding: 2% 14%;
   }
   @media all and (min-width:1024px){
     display: flex;
+    padding: 2% 14%;
   }
 }
 
