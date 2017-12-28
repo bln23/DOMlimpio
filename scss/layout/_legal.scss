@@ -1,0 +1,125 @@
+.legal {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  @media all and (min-width:768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    .info {
+      grid-row: 1 / 4;
+      padding: 20%;
+    }
+  }
+}
+
+  @media all and (min-width:1024px) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+.card-legal1{
+display: none;
+@media all and (min-width:1024px){
+  .card-legal1{
+  background-color: white;
+  color: black;
+  padding: 5% 4%;
+  text-align: center;
+  border: solid 1px;
+  }
+}
+}
+
+.hidden {
+  display: none,
+}
+
+.card-legal2{
+@media all and (min-width:1024px){
+  .card-legal2{
+  display: inline-block;
+  background-color: $colorPrimary;
+  color: black;
+  padding: 5% 4%;
+  text-align: center;
+  border: solid 1px;
+  }
+}
+}
+
+
+.info {
+padding: 50%;
+  @media all and (min-width:768px) {
+      grid-row: 1 / 4;
+      padding: 20%;
+    }
+  @media all and (min-width:1024px) {
+      grid-row: 1 / 4;
+      padding: 20%;
+    }
+}
+
+
+.info-title {
+font-size: $thirdTitleSize;
+padding-top: 16%;
+text-align: center;
+text-transform: uppercase;
+@media all and (min-width:768px) {
+    padding: 8%;
+}
+@media all and (min-width:1024px) {
+    padding: 10%;
+}
+
+}
+
+.info-text {
+  font-size: $fourthTitleSize;
+  text-align: center;
+  @media all and (min-width:768px) {
+  }
+  @media all and (min-width:768px) {
+  }
+}
+
+.see-input {
+  border: 1px solid #ffff;
+  color: white;
+  padding: 5%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.125rem;
+  font-weight: 400;
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: transparent;
+  font-size: $fourthTitleSize;
+  font-weight: $normalFontWeight;
+  @media all and (min-width:768px) {
+    display: none;
+}
+  @media all and (min-width:1024px) {
+    display: none;
+  }
+
+}
+
+
+.see-input-cards{
+  width: 60%;
+  text-transform: uppercase;
+  @media all and (min-width:768px) {
+    border: 1px solid black;
+        padding: 2% 11%;
+  }
+  @media all and (min-width:1024px) {
+    border: 1px solid black;
+        padding: 2% 11%;
+  }
+}

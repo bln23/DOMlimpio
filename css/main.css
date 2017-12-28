@@ -3,19 +3,95 @@
   box-sizing: border-box;
 }
 
-body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p {
+body,div,span,applet,object,iframe {
   margin: 0;
   height: 100;
   font-family: Ubuntu, sans-serif;
 }/* --------- CORE ---------  */body {
-  font-family: Ubuntu, sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }/* amarillo *//* gris claro *//* negro *//* gris oscuro *//* --------- COMPONENTS ---------  *//* FONT FAMILY *//* FONT SIZE *//* FONT WEIGHT */.submit-input {
   background-color: #ffcd49;
   color: #000;
   cursor: pointer;
   font-size: 1.125rem;
   font-weight: 700;
-}/* --------- LAYOUT /* --------- *//*BASIC CALCULATOR STYLE (text and box parameters) */.calculator {
+}
+
+.see-input-cards {
+  color: black;
+  border: 1px solid black;
+  padding: 1% 4%;
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: transparent;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.info-more-input {
+  color: black;
+  padding: 1% 7%;
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: white;
+  font-size: 1.125rem;
+  font-weight: 400;
+}/* --------- LAYOUT /* --------- */.legal {
+  background-color: black;
+  color: white;
+}
+
+.legal .card-title {
+  font-size: 2.5rem;
+}
+
+.legal .card-legal1 {
+  background-color: white;
+  color: black;
+  padding: 5% 4%;
+  text-align: center;
+  border: solid 1px;
+}
+
+.legal .card-legal2 {
+  background-color: #ffcd49;
+  color: black;
+  padding: 5% 4%;
+  text-align: center;
+  border: solid 1px;
+}
+
+.info-title {
+  font-size: 2rem;
+  padding: 8%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.info-text {
+  font-size: 1.125rem;
+  text-align: center;
+}
+
+.see-input {
+  border: 1px solid #ffff;
+  color: white;
+  padding: 5%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.125rem;
+  font-weight: 400;
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: transparent;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.see-input-cards {
+  width: 60%;
+  text-transform: uppercase;
+}/*BASIC CALCULATOR STYLE (text and box parameters) */.calculator {
   text-align: center;
 }
 
@@ -24,6 +100,7 @@ body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p {
 }
 
 .tertiary-title {
+  padding-top: 3%;
   font-size: 2rem;
   color: #ffcd49;
 }
@@ -99,35 +176,6 @@ input::placeholder {
   padding-top: 4%;
 }
 
-.accordion {
-  background-color: #ffcd49;
-  color: #000;
-  cursor: pointer;
-  padding: 20px;
-  width: 100%;
-  border: none;
-  border-bottom: 1.5px solid #000;
-  text-align: left;
-  outline: none;
-  font-size: 1.125rem;
-  font-weight: 500;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.accordion:hover {
-  background-color: #F6AE2D;
-}
-
-.panel {
-  padding: 0 18px;
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  -webkit-transition: max-height 0.2s ease-out;
-  transition: max-height 0.2s ease-out;
-}
-
 .title-slider {
   text-align: center;
   background-color: white;
@@ -163,7 +211,65 @@ li {
   padding: 30px;
   text-align: center;
 }/*.hidden {
-  display: none;*/@media all and (min-width: 768px) {
+  display: none;*/.accordion {
+  background-color: #ffcd49;
+  color: #000;
+  cursor: pointer;
+  padding: 20px;
+  width: 100%;
+  border: none;
+  border-bottom: 1.5px solid #000;
+  text-align: left;
+  outline: none;
+  font-size: 1.125rem;
+  font-weight: 500;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.accordion:hover {
+  background-color: #F6AE2D;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+}
+
+@media all and (min-width: 768px) {
+  .legal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .legal .info {
+    grid-row: 1 / 4;
+    padding: 20%;
+  }
+
+  .info {
+    grid-row: 1 / 4;
+    padding: 20%;
+  }
+
+  .info-title {
+    padding: 8%;
+  }
+
+  .see-input {
+    display: none;
+  }
+
+  .see-input-cards {
+    border: 1px solid black;
+    padding: 2% 11%;
+  }
+
   .info-calculator {
     margin-bottom: 5%;
   }
@@ -228,6 +334,29 @@ li {
 }
 
 @media all and (min-width: 1024px) {
+  .legal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .info {
+    grid-row: 1 / 4;
+    padding: 20%;
+  }
+
+  .info-title {
+    padding: 10%;
+  }
+
+  .see-input {
+    display: none;
+  }
+
+  .see-input-cards {
+    border: 1px solid black;
+    padding: 2% 11%;
+  }
+
   .info-calculator {
     margin-bottom: 3%;
   }
