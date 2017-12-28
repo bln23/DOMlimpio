@@ -1,0 +1,48 @@
+.title-slider {
+  text-align: center;
+  background-color: white;
+  padding: 70px;
+}
+
+.testimony-title {
+  font-size: $thirdTitleSize;
+  @media all  and (min-width:768px) {
+    margin-bottom: 3%;
+  }
+}
+
+ul li {
+  list-style: none;
+}
+
+.testimonys{
+  background-color: $colorSecondary;
+  padding: 30px;
+  margin: 0;
+}
+
+.testimony{
+  background-color: white;
+  width: 100%;
+  padding: 20px;
+}
+
+.testimony-person {
+ background-color: $colorSecondary;
+ padding: 30px;
+ text-align: center;
+}
+
+.hidden {
+  display: none;
+    @media all and (min-width:768px) {
+      .hidden {
+        display: inline-block;
+      }
+    }
+    @media all and (min-width:1024px) {
+      .hidden {
+        display: inline-block;
+      }
+    }
+}

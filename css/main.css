@@ -126,38 +126,45 @@ input::placeholder {
   overflow: hidden;
   -webkit-transition: max-height 0.2s ease-out;
   transition: max-height 0.2s ease-out;
-}/*.accordion {
-background-color: $colorPrimary;
-color: $colorTertiary;
-cursor: pointer;
-padding: 25px;
-width: 100%;
-border:none;
-border-bottom: 1.5px solid $colorTertiary;
-text-align: left;
-outline: none;
-font-size: $fourthTitleSize;
-font-weight: $mediumFontWeight;
-transition: 0.4s;
 }
 
-.active, .accordion:hover {
-background-color: #F6AE2D;
+.title-slider {
+  text-align: center;
+  background-color: white;
+  padding: 70px;
+}
+
+.testimony-title {
+  font-size: 2rem;
+}
+
+ul li {
+  list-style: none;
+}
+
+.testimonys {
+  background-color: #f0f0f0;
+  padding: 30px;
+  margin: 0;
+}
+
+.testimony {
+  background-color: white;
+  width: 100%;
+  padding: 20px;
+}
+
+.testimony-person {
+  background-color: #f0f0f0;
+  padding: 30px;
+  text-align: center;
 }
 
 .hidden {
-display: none;
+  display: none;
 }
 
-.panel {
-padding: 0 18px;
-background-color: white;
-display: none;
-max-height: 0;
-overflow: hidden;
-transition: max-height 0.2s ease-out;
-
-}*/@media all and (min-width: 768px) {
+@media all and (min-width: 768px) {
   .info-calculator {
     margin-bottom: 5%;
   }
@@ -179,6 +186,14 @@ transition: max-height 0.2s ease-out;
 
   .answer-calculator {
     padding-top: 3.5%;
+  }
+
+  .testimony-title {
+    margin-bottom: 3%;
+  }
+
+  .hidden .hidden {
+    display: inline-block;
   }
 }
 
@@ -216,6 +231,10 @@ transition: max-height 0.2s ease-out;
 
   .salary-value-title {
     padding-top: 10%;
+  }
+
+  .hidden .hidden {
+    display: inline-block;
   }
 }
 
