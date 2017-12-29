@@ -4,97 +4,66 @@
   }
   @media all and (min-width:1024px) {
     background-color: $colorSecondary;
-    margin-bottom: 10%;
   }
-}
 
-.title-slider {
-  text-align: center;
-  background-color: white;
-  padding: 70px;
-  @media all and (min-width:768px) {
+  .title-slider {
+    text-align: center;
+    background-color: white;
+    padding: 70px;
+    @media all and (min-width:768px) {
+      background-color: $colorSecondary;
+      margin-top: 8%;
+      padding: 50px;
+    }
+  }
+
+  .testimony-title {
+    font-size: $thirdTitleSize;
+    @media all and (min-width:768px) {
+      margin-bottom: 5%;
+    }
+    @media all and (min-width:1024px) {
+      margin-bottom: 3%;
+    }
+  }
+
+  .testimonys{
     background-color: $colorSecondary;
-    margin-top: 8%;
-    padding: 50px;
+    padding:14%;
+    margin: 0;
+    @media all and (min-width:768px) {
+      display: flex;
+      padding: 2% 14%;
+    }
   }
-  @media all and (min-width:1024px) {
+
+  .testimony{
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+    @media all and (min-width:768px) {
+      width: 95%;
+      .hidden {
+        display: inline-block;
+      }
+    }
+  }
+
+  .testimony-person {
     background-color: $colorSecondary;
-    margin-top: 8%;
-    padding: 50px;
-  }
-}
-
-.testimony-title {
-  font-size: $thirdTitleSize;
-  @media all and (min-width:768px) {
-    margin-bottom: 5%;
-  }
-  @media all and (min-width:1024px) {
-    margin-bottom: 3%;
-  }
-}
-
-li {
-  list-style: none;
-}
-
-.testimonys{
-  background-color: $colorSecondary;
-  padding:14%;
-  margin: 0;
-  @media all and (min-width:768px) {
-    display: flex;
-    padding: 2% 14%;
-  }
-  @media all and (min-width:1024px){
-    display: flex;
-    padding: 2% 14%;
-  }
-}
-
-/*.hidden {
-  display: none;
-}*/
-
-.testimony{
-  background-color: white;
-  width: 100%;
-  padding: 20px;
-  @media all and (min-width:768px) {
-    width: 95%;
-    .hidden {
-      display: inline-block;
+    padding: 30px;
+    text-align: center;
+    @media all and (min-width:768px){
+      text-align: right;
+      padding: 30px 0;
+      width: 95%;
+      .hidden {
+        display: inline-block;
+      }
     }
   }
-  @media all and (min-width:1024px) {
-    width: 95%;
-  }
-  .hidden {
-    display: inline-block;
+
+  li {
+    list-style: none;
   }
 }
-
-.testimony-person {
-  background-color: $colorSecondary;
-  padding: 30px;
-  text-align: center;
-  @media all and (min-width:768px){
-    text-align: right;
-    padding: 30px 0;
-    width: 95%;
-    .hidden {
-      display: inline-block;
-    }
-  }
-  @media all and (min-width:1024px){
-    text-align: right;
-    padding: 30px 0;
-    width: 95%;
-    .hidden {
-      display: inline-block;
-    }
-  }
-}
-
-/*.hidden {
-  display: none;*/

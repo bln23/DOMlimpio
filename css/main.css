@@ -184,42 +184,39 @@ input::placeholder {
   padding-top: 4%;
 }
 
-.title-slider {
+.slider .title-slider {
   text-align: center;
   background-color: white;
   padding: 70px;
 }
 
-.testimony-title {
+.slider .testimony-title {
   font-size: 2rem;
 }
 
-li {
-  list-style: none;
-}
-
-.testimonys {
+.slider .testimonys {
   background-color: #f0f0f0;
   padding: 14%;
   margin: 0;
-}/*.hidden {
-  display: none;
-}*/.testimony {
+}
+
+.slider .testimony {
   background-color: white;
   width: 100%;
   padding: 20px;
 }
 
-.testimony .hidden {
-  display: inline-block;
-}
-
-.testimony-person {
+.slider .testimony-person {
   background-color: #f0f0f0;
   padding: 30px;
   text-align: center;
-}/*.hidden {
-  display: none;*/.accordion {
+}
+
+.slider li {
+  list-style: none;
+}
+
+.accordion {
   background-color: #ffcd49;
   color: #000;
   cursor: pointer;
@@ -284,38 +281,38 @@ li {
     margin-bottom: 10%;
   }
 
-  .title-slider {
+  .slider .title-slider {
     background-color: #f0f0f0;
     margin-top: 8%;
     padding: 50px;
   }
 
-  .testimony-title {
+  .slider .testimony-title {
     margin-bottom: 5%;
   }
 
-  .testimonys {
+  .slider .testimonys {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     padding: 2% 14%;
   }
 
-  .testimony {
+  .slider .testimony {
     width: 95%;
   }
 
-  .testimony .hidden {
+  .slider .testimony .hidden {
     display: inline-block;
   }
 
-  .testimony-person {
+  .slider .testimony-person {
     text-align: right;
     padding: 30px 0;
     width: 95%;
   }
 
-  .testimony-person .hidden {
+  .slider .testimony-person .hidden {
     display: inline-block;
   }
 }
@@ -386,38 +383,10 @@ li {
 
   .slider {
     background-color: #f0f0f0;
-    margin-bottom: 10%;
   }
 
-  .title-slider {
-    background-color: #f0f0f0;
-    margin-top: 8%;
-    padding: 50px;
-  }
-
-  .testimony-title {
+  .slider .testimony-title {
     margin-bottom: 3%;
-  }
-
-  .testimonys {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 2% 14%;
-  }
-
-  .testimony {
-    width: 95%;
-  }
-
-  .testimony-person {
-    text-align: right;
-    padding: 30px 0;
-    width: 95%;
-  }
-
-  .testimony-person .hidden {
-    display: inline-block;
   }
 }
 
