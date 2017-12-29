@@ -126,38 +126,9 @@ input::placeholder {
   overflow: hidden;
   -webkit-transition: max-height 0.2s ease-out;
   transition: max-height 0.2s ease-out;
-}/*.accordion {
-background-color: $colorPrimary;
-color: $colorTertiary;
-cursor: pointer;
-padding: 25px;
-width: 100%;
-border:none;
-border-bottom: 1.5px solid $colorTertiary;
-text-align: left;
-outline: none;
-font-size: $fourthTitleSize;
-font-weight: $mediumFontWeight;
-transition: 0.4s;
 }
 
-.active, .accordion:hover {
-background-color: #F6AE2D;
-}
-
-.hidden {
-display: none;
-}
-
-.panel {
-padding: 0 18px;
-background-color: white;
-display: none;
-max-height: 0;
-overflow: hidden;
-transition: max-height 0.2s ease-out;
-
-}*/@media all and (min-width: 768px) {
+@media all and (min-width: 768px) {
   .info-calculator {
     margin-bottom: 5%;
   }
