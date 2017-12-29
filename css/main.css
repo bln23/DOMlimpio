@@ -15,6 +15,18 @@ body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p {
   cursor: pointer;
   font-size: 1.125rem;
   font-weight: 700;
+}
+
+.primaryButton {
+  background-color: inherit;
+  color: #000;
+  cursor: pointer;
+  font-size: 1.125rem;
+  font-weight: 700;
+  border: 1px solid #000;
+  padding: 20px 40px;
+  display: block;
+  margin: 50px auto;
 }/* --------- LAYOUT /* --------- *//*BASIC CALCULATOR STYLE (text and box parameters) */.calculator {
   text-align: center;
 }
@@ -126,38 +138,57 @@ input::placeholder {
   overflow: hidden;
   -webkit-transition: max-height 0.2s ease-out;
   transition: max-height 0.2s ease-out;
-}/*.accordion {
-background-color: $colorPrimary;
-color: $colorTertiary;
-cursor: pointer;
-padding: 25px;
-width: 100%;
-border:none;
-border-bottom: 1.5px solid $colorTertiary;
-text-align: left;
-outline: none;
-font-size: $fourthTitleSize;
-font-weight: $mediumFontWeight;
-transition: 0.4s;
 }
 
-.active, .accordion:hover {
-background-color: #F6AE2D;
+.card-container {
+  margin: 50px 0;
 }
 
-.hidden {
-display: none;
+.card {
+  background: #ffcd49;
+  padding: 20px 0;
+  border-top: 1px solid #000;
 }
 
-.panel {
-padding: 0 18px;
-background-color: white;
-display: none;
-max-height: 0;
-overflow: hidden;
-transition: max-height 0.2s ease-out;
+.card-icon {
+  width: 100px;
+  display: block;
+  margin: 20px auto;
+}
 
-}*/@media all and (min-width: 768px) {
+.text-card {
+  margin: 50px 30px;
+}
+
+.title-card {
+  margin: 50px 0px;
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+.text-card-list {
+  font-size: 1.125rem;
+  text-align: center;
+  margin: 30px 70px;
+}
+
+.title-card-list {
+  font-size: 2rem;
+  text-align: center;
+  margin: 30px 70px;
+}
+
+.line {
+  border: 0;
+  height: 1px;
+  background-color: #000;
+  width: 70%;
+}
+
+@media all and (min-width: 768px) {
   .info-calculator {
     margin-bottom: 5%;
   }
@@ -179,6 +210,41 @@ transition: max-height 0.2s ease-out;
 
   .answer-calculator {
     padding-top: 3.5%;
+  }
+}
+
+@media all and (min-width: 924px) {
+  .card-container {
+    margin: 50px 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .card {
+    width: 31.5%;
+    padding: 30px 0;
+    border: none;
+  }
+
+  .card-icon {
+    margin: 50px auto;
+  }
+
+  .hide {
+    display: block;
+  }
+
+  .text-card-list {
+    margin: 50px 120px;
   }
 }
 
@@ -216,6 +282,30 @@ transition: max-height 0.2s ease-out;
 
   .salary-value-title {
     padding-top: 10%;
+  }
+
+  .card-container {
+    margin: 50px 70px;
+  }
+}
+
+@media all and (min-width: 1124px) {
+  .text-card-list {
+    margin: 70px 210px;
+  }
+
+  .line {
+    width: 60%;
+  }
+}
+
+@media all and (min-width: 1224px) {
+  .card-container {
+    margin: 50px 120px;
+  }
+
+  .text-card {
+    margin: 60px;
   }
 }
 
