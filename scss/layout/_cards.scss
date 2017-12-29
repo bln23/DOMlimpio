@@ -1,0 +1,64 @@
+.card-container {
+  margin: 50px 0;
+  @media all and (min-width: 924px) {
+    margin: 50px 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  @media all and (min-width: 1024px) {
+      margin: 50px 110px;
+  }
+  @media all and (min-width: 1224px) {
+      margin: 50px 140px;
+  }
+}
+
+.card {
+ background: $colorPrimary;
+ padding: 20px 0;
+ border-top: 1px solid $colorTertiary;
+ @media all and (min-width: 924px){
+   width: 30%;
+   padding: 30px 0;
+   border: none;
+ }
+}
+
+.card-icon {
+  width: 100px;
+  display: block;
+  margin: 50px auto;
+}
+
+.text-card {
+  margin: 50px 30px;
+  @media all and (min-width: 1124px) {
+      margin: 50px;
+  }
+}
+
+.title-card {
+  text-align: center;
+}
+
+.primaryButton {
+  background-color: inherit;
+  color: $colorTertiary;
+  cursor: pointer;
+  font-size: $fourthTitleSize;
+  font-weight: $boldFontWeight;
+  border: 1px solid $colorTertiary;
+  padding: 20px 40px;
+  display: block;
+  margin: 50px auto;
+}
+
+.hide{
+  display: none;
+  @media all and (min-width: 924px) {
+    display: block;
+  }
+
+}
