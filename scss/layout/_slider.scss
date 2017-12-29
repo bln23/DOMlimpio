@@ -1,0 +1,91 @@
+.slider {
+  @media all and (min-width:768px) {
+    margin-bottom: 10%;
+  }
+  @media all and (min-width:1024px) {
+    background-color: $colorSecondary;
+  }
+
+  .title-slider {
+    text-align: center;
+    background-color: white;
+    padding: 70px;
+    @media all and (min-width:768px) {
+      background-color: $colorSecondary;
+      margin-top: 8%;
+      padding: 50px;
+    }
+  }
+
+  .testimony-title {
+    font-size: $thirdTitleSize;
+    @media all and (min-width:768px) {
+      margin-bottom: 5%;
+    }
+    @media all and (min-width:1024px) {
+      margin-bottom: 3%;
+    }
+  }
+
+  .testimonys{
+    padding: 2% 14%;
+    margin: 0;
+    background-color: $colorSecondary;
+    .testimony:not(:first-child) {
+      display: none;
+    }
+    @media all and (min-width:768px) {
+      display: flex;
+      background: url('../images/comillas-abajo.png') 5% 0 no-repeat,
+      url('../images/comillas-arriba.png') 93% 0 no-repeat;
+      background-size: 96px;
+      background-color: $colorSecondary;
+      .testimony:not(:first-child) {
+        display: block;
+      }
+      .testimony:nth-child(2n) .testimony-person {
+        text-align: left;
+      }
+
+      .testimony:nth-child(2n + 1) .testimony-person {
+        text-align: right;
+      }
+    }
+
+    @media all and (min-width:1024px) {
+      background-size: 136px;
+    }
+  }
+
+  .testimony-text {
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+    @media all and (min-width:768px) {
+      width: 95%;
+      .hidden {
+        display: inline-block;
+      }
+    }
+  }
+
+  .image-testimony {
+    border-radius: 75px;
+    width: 70px;
+  }
+
+  .testimony-person {
+    background-color: $colorSecondary;
+    padding: 30px;
+    text-align: center;
+    @media all and (min-width:768px){
+      text-align: right;
+      padding: 30px 0;
+      width: 95%;
+    }
+  }
+
+  li {
+    list-style: none;
+  }
+}

@@ -3,18 +3,38 @@
   box-sizing: border-box;
 }
 
-body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p {
+body,div,span,applet,object,iframe {
   margin: 0;
-  height: 100;
   font-family: Ubuntu, sans-serif;
 }/* --------- CORE ---------  */body {
-  font-family: Ubuntu, sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }/* amarillo *//* gris claro *//* negro *//* gris oscuro *//* --------- COMPONENTS ---------  *//* FONT FAMILY *//* FONT SIZE *//* FONT WEIGHT */.submit-input {
   background-color: #ffcd49;
   color: #000;
   cursor: pointer;
   font-size: 1.125rem;
   font-weight: 700;
+}
+
+.see-input-cards {
+  color: black;
+  border: 1px solid black;
+  padding: 1% 4%;
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: transparent;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.info-more-input {
+  color: black;
+  padding: 1% 7%;
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: white;
+  font-size: 1.125rem;
+  font-weight: 400;
 }
 
 .primaryButton {
@@ -27,7 +47,70 @@ body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p {
   padding: 20px 40px;
   display: block;
   margin: 50px auto;
-}/* --------- LAYOUT /* --------- *//*BASIC CALCULATOR STYLE (text and box parameters) */.calculator {
+}/* --------- LAYOUT /* --------- */.legal {
+  background-color: black;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.legal .info {
+  padding: 11%;
+}
+
+.legal .info-title {
+  font-size: 2rem;
+  padding-top: 4%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.legal .info-text {
+  font-size: 1.125rem;
+  text-align: center;
+}
+
+.legal .card-legal {
+  display: none;
+  color: black;
+  padding: 5% 4%;
+  text-align: center;
+  border: solid 1px;
+}
+
+.legal .card-legal:nth-child(2n) {
+  background-color: white;
+}
+
+.legal .card-legal:nth-child(2n + 1) {
+  background-color: #ffcd49;
+}
+
+.legal .see-input {
+  border: 1px solid #ffff;
+  color: white;
+  padding: 5%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.125rem;
+  font-weight: 400;
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: transparent;
+  font-size: 1.125rem;
+  font-weight: 400;
+  display: block;
+}
+
+.legal .see-input-cards {
+  width: 60%;
+  text-transform: uppercase;
+}/*BASIC CALCULATOR STYLE (text and box parameters) */.calculator {
   text-align: center;
 }
 
@@ -36,6 +119,7 @@ body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p {
 }
 
 .tertiary-title {
+  padding-top: 3%;
   font-size: 2rem;
   color: #ffcd49;
 }
@@ -109,6 +193,47 @@ input::placeholder {
 
 .salary-value-title {
   padding-top: 4%;
+}
+
+.slider .title-slider {
+  text-align: center;
+  background-color: white;
+  padding: 70px;
+}
+
+.slider .testimony-title {
+  font-size: 2rem;
+}
+
+.slider .testimonys {
+  padding: 2% 14%;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.slider .testimonys .testimony:not(:first-child) {
+  display: none;
+}
+
+.slider .testimony-text {
+  background-color: white;
+  width: 100%;
+  padding: 20px;
+}
+
+.slider .image-testimony {
+  border-radius: 75px;
+  width: 70px;
+}
+
+.slider .testimony-person {
+  background-color: #f0f0f0;
+  padding: 30px;
+  text-align: center;
+}
+
+.slider li {
+  list-style: none;
 }
 
 .accordion {
@@ -189,6 +314,14 @@ input::placeholder {
 }
 
 @media all and (min-width: 768px) {
+  .legal .info {
+    padding: 12%;
+  }
+
+  .legal .info-title {
+    padding: 2%;
+  }
+
   .info-calculator {
     margin-bottom: 5%;
   }
@@ -210,6 +343,55 @@ input::placeholder {
 
   .answer-calculator {
     padding-top: 3.5%;
+  }
+
+  .slider {
+    margin-bottom: 10%;
+  }
+
+  .slider .title-slider {
+    background-color: #f0f0f0;
+    margin-top: 8%;
+    padding: 50px;
+  }
+
+  .slider .testimony-title {
+    margin-bottom: 5%;
+  }
+
+  .slider .testimonys {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: url("../images/comillas-abajo.png") 5% 0 no-repeat, url("../images/comillas-arriba.png") 93% 0 no-repeat;
+    background-size: 96px;
+    background-color: #f0f0f0;
+  }
+
+  .slider .testimonys .testimony:not(:first-child) {
+    display: block;
+  }
+
+  .slider .testimonys .testimony:nth-child(2n) .testimony-person {
+    text-align: left;
+  }
+
+  .slider .testimonys .testimony:nth-child(2n + 1) .testimony-person {
+    text-align: right;
+  }
+
+  .slider .testimony-text {
+    width: 95%;
+  }
+
+  .slider .testimony-text .hidden {
+    display: inline-block;
+  }
+
+  .slider .testimony-person {
+    text-align: right;
+    padding: 30px 0;
+    width: 95%;
   }
 }
 
@@ -249,6 +431,34 @@ input::placeholder {
 }
 
 @media all and (min-width: 1024px) {
+  .legal .info {
+    grid-row: 1 / 4;
+    padding: 20%;
+  }
+
+  .legal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .legal .info-title {
+    padding: 10%;
+  }
+
+  .legal .card-legal {
+    display: block;
+  }
+
+  .legal .see-input {
+    display: none;
+  }
+
+  .legal .see-input-cards {
+    border: 1px solid black;
+    padding: 2% 11%;
+  }
+
   .info-calculator {
     margin-bottom: 3%;
   }
@@ -282,6 +492,18 @@ input::placeholder {
 
   .salary-value-title {
     padding-top: 10%;
+  }
+
+  .slider {
+    background-color: #f0f0f0;
+  }
+
+  .slider .testimony-title {
+    margin-bottom: 3%;
+  }
+
+  .slider .testimonys {
+    background-size: 136px;
   }
 
   .card-container {

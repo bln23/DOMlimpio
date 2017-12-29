@@ -6,6 +6,27 @@
   font-weight: $boldFontWeight;
 }
 
+.see-input-cards {
+  color: black;
+  border: 1px solid black;
+  padding: 1% 4%;
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: transparent;
+  font-size: $fourthTitleSize;
+  font-weight: $normalFontWeight;
+}
+
+.info-more-input{
+  color: black;
+  padding: 1% 7%;
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: white;
+  font-size: $fourthTitleSize;
+  font-weight: $normalFontWeight;
+}
+
 .primaryButton {
   background-color: inherit;
   color: $colorTertiary;

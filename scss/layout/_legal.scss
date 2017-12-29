@@ -1,0 +1,88 @@
+.legal {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  .info {
+    padding: 11%;
+    @media all and (min-width:768px) {
+        padding: 12%;
+    }
+    @media all and (min-width:1024px) {
+        grid-row: 1 / 4;
+        padding: 20%;
+    }
+  }
+
+  @media all and (min-width:1024px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .info-title {
+    font-size: $thirdTitleSize;
+    padding-top: 4%;
+    text-align: center;
+    text-transform: uppercase;
+    @media all and (min-width:768px) {
+        padding: 2%;
+    }
+    @media all and (min-width:1024px) {
+        padding: 10%;
+    }
+  }
+
+  .info-text {
+    font-size: $fourthTitleSize;
+    text-align: center;
+  }
+
+  .card-legal {
+    display: none;
+    color: black;
+    padding: 5% 4%;
+    text-align: center;
+    border: solid 1px;
+
+    &:nth-child(2n) {
+      background-color: white;
+    }
+
+    &:nth-child(2n + 1) {
+      background-color: $colorPrimary;
+    }
+
+    @media all and (min-width:1024px) {
+      display: block;
+    }
+  }
+
+  .see-input {
+    border: 1px solid #ffff;
+    color: white;
+    padding: 5%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.125rem;
+    font-weight: 400;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: transparent;
+    font-size: $fourthTitleSize;
+    font-weight: $normalFontWeight;
+    display: block;
+    @media all and (min-width:1024px) {
+      display: none;
+    }
+  }
+
+  .see-input-cards{
+    width: 60%;
+    text-transform: uppercase;
+    @media all and (min-width:1024px) {
+      border: 1px solid black;
+      padding: 2% 11%;
+    }
+  }
+}
