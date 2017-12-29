@@ -89,4 +89,8 @@
   border: 0;
   height: 1px;
   background-color: $colorTertiary;
+  width: 70%;
+  @media all and (min-width: 1124px) {
+    width: 60%;
+  }
 }
