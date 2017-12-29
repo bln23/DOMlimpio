@@ -16,6 +16,8 @@ body, div, span, applet, object, iframe, {
 /* --------- COMPONENTS ---------  */
 @import 'components/typography-calculator';
 @import 'components/buttons';
+@import 'components/hero';
+@import 'components/info';
 
 /* --------- LAYOUT /* --------- */
 @import 'layout/legal';
@@ -23,3 +25,4 @@ body, div, span, applet, object, iframe, {
 @import 'layout/slider';
 @import 'layout/accordion';
 @import 'layout/cards';
+@import 'layout/header';
