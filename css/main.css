@@ -181,6 +181,12 @@ input::placeholder {
   margin: 30px 70px;
 }
 
+.line {
+  border: 0;
+  height: 1px;
+  background-color: #000;
+}
+
 @media all and (min-width: 768px) {
   .info-calculator {
     margin-bottom: 5%;
@@ -283,10 +289,6 @@ input::placeholder {
 }
 
 @media all and (min-width: 1124px) {
-  .text-card {
-    margin: 50px;
-  }
-
   .text-card-list {
     margin: 70px 210px;
   }
@@ -295,6 +297,10 @@ input::placeholder {
 @media all and (min-width: 1224px) {
   .card-container {
     margin: 50px 120px;
+  }
+
+  .text-card {
+    margin: 60px;
   }
 }
 

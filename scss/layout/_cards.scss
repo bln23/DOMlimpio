@@ -37,8 +37,8 @@
 
 .text-card {
   margin: 50px 30px;
-  @media all and (min-width: 1124px) {
-      margin: 50px;
+  @media all and (min-width: 1224px) {
+      margin: 60px;
   }
 }
 
@@ -83,4 +83,10 @@
   font-size: $thirdTitleSize;
   text-align: center;
   margin: 30px 70px;
+}
+
+.line {
+  border: 0;
+  height: 1px;
+  background-color: $colorTertiary;
 }
