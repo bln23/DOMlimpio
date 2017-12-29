@@ -141,7 +141,7 @@ input::placeholder {
 .card-icon {
   width: 100px;
   display: block;
-  margin: 50px auto;
+  margin: 20px auto;
 }
 
 .text-card {
@@ -214,6 +214,10 @@ input::placeholder {
     width: 30%;
     padding: 30px 0;
     border: none;
+  }
+
+  .card-icon {
+    margin: 50px auto;
   }
 
   .hide {

@@ -29,7 +29,10 @@
 .card-icon {
   width: 100px;
   display: block;
-  margin: 50px auto;
+  margin: 20px auto;
+  @media all and (min-width: 924px) {
+    margin: 50px auto;
+  }
 }
 
 .text-card {
