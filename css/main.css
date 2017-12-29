@@ -169,6 +169,18 @@ input::placeholder {
   display: none;
 }
 
+.text-card-list {
+  font-size: 1.125rem;
+  text-align: center;
+  margin: 30px 70px;
+}
+
+.title-card-list {
+  font-size: 2rem;
+  text-align: center;
+  margin: 30px 70px;
+}
+
 @media all and (min-width: 768px) {
   .info-calculator {
     margin-bottom: 5%;
@@ -211,7 +223,7 @@ input::placeholder {
   }
 
   .card {
-    width: 30%;
+    width: 31.5%;
     padding: 30px 0;
     border: none;
   }
@@ -222,6 +234,10 @@ input::placeholder {
 
   .hide {
     display: block;
+  }
+
+  .text-card-list {
+    margin: 50px 120px;
   }
 }
 
@@ -269,6 +285,10 @@ input::placeholder {
 @media all and (min-width: 1124px) {
   .text-card {
     margin: 50px;
+  }
+
+  .text-card-list {
+    margin: 70px 210px;
   }
 }
 

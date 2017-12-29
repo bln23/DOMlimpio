@@ -19,8 +19,8 @@
  background: $colorPrimary;
  padding: 20px 0;
  border-top: 1px solid $colorTertiary;
- @media all and (min-width: 924px){
-   width: 30%;
+ @media all and (min-width: 924px) {
+   width: 31.5%;
    padding: 30px 0;
    border: none;
  }
@@ -65,4 +65,22 @@
     display: block;
   }
 
+}
+
+.text-card-list {
+  font-size: $fourthTitleSize;
+  text-align: center;
+  margin: 30px 70px;
+  @media all and (min-width: 924px) {
+    margin: 50px 120px;
+  }
+  @media all and (min-width: 1124px) {
+    margin: 70px 210px;
+  }
+}
+
+.title-card-list {
+  font-size: $thirdTitleSize;
+  text-align: center;
+  margin: 30px 70px;
 }
