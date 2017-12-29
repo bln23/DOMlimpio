@@ -149,6 +149,7 @@ input::placeholder {
 }
 
 .title-card {
+  margin: 50px 0px;
   text-align: center;
 }
 
@@ -195,7 +196,7 @@ input::placeholder {
 
 @media all and (min-width: 924px) {
   .card-container {
-    margin: 50px 80px;
+    margin: 50px 50px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -257,7 +258,7 @@ input::placeholder {
   }
 
   .card-container {
-    margin: 50px 110px;
+    margin: 50px 70px;
   }
 }
 
@@ -269,7 +270,7 @@ input::placeholder {
 
 @media all and (min-width: 1224px) {
   .card-container {
-    margin: 50px 140px;
+    margin: 50px 120px;
   }
 }
 
