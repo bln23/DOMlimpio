@@ -54,7 +54,7 @@ body,div,span,applet,object,iframe {
 
 .legal .info-title {
   font-size: 2rem;
-  padding-top: 16%;
+  padding-top: 4%;
   text-align: center;
   text-transform: uppercase;
 }
@@ -250,31 +250,11 @@ li {
 
 @media all and (min-width: 768px) {
   .legal .info {
-    grid-row: 1 / 4;
-    padding: 20%;
-  }
-
-  .legal {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    padding: 12%;
   }
 
   .legal .info-title {
-    padding: 8%;
-  }
-
-  .legal .card-legal {
-    display: block;
-  }
-
-  .legal .see-input {
-    display: none;
-  }
-
-  .legal .see-input-cards {
-    border: 1px solid black;
-    padding: 2% 11%;
+    padding: 2%;
   }
 
   .info-calculator {
@@ -341,8 +321,32 @@ li {
 }
 
 @media all and (min-width: 1024px) {
+  .legal .info {
+    grid-row: 1 / 4;
+    padding: 20%;
+  }
+
+  .legal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
   .legal .info-title {
     padding: 10%;
+  }
+
+  .legal .card-legal {
+    display: block;
+  }
+
+  .legal .see-input {
+    display: none;
+  }
+
+  .legal .see-input-cards {
+    border: 1px solid black;
+    padding: 2% 11%;
   }
 
   .info-calculator {

@@ -6,12 +6,15 @@
   .info {
     padding: 11%;
     @media all and (min-width:768px) {
+        padding: 12%;
+    }
+    @media all and (min-width:1024px) {
         grid-row: 1 / 4;
         padding: 20%;
     }
   }
 
-  @media all and (min-width:768px) {
+  @media all and (min-width:1024px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -19,11 +22,11 @@
 
   .info-title {
     font-size: $thirdTitleSize;
-    padding-top: 16%;
+    padding-top: 4%;
     text-align: center;
     text-transform: uppercase;
     @media all and (min-width:768px) {
-        padding: 8%;
+        padding: 2%;
     }
     @media all and (min-width:1024px) {
         padding: 10%;
@@ -50,7 +53,7 @@
       background-color: $colorPrimary;
     }
 
-    @media all and (min-width:768px) {
+    @media all and (min-width:1024px) {
       display: block;
     }
   }
@@ -69,7 +72,7 @@
     font-size: $fourthTitleSize;
     font-weight: $normalFontWeight;
     display: block;
-    @media all and (min-width:768px) {
+    @media all and (min-width:1024px) {
       display: none;
     }
   }
@@ -77,7 +80,7 @@
   .see-input-cards{
     width: 60%;
     text-transform: uppercase;
-    @media all and (min-width:768px) {
+    @media all and (min-width:1024px) {
       border: 1px solid black;
       padding: 2% 11%;
     }
