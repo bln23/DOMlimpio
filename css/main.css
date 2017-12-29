@@ -39,41 +39,48 @@ body,div,span,applet,object,iframe {
 }/* --------- LAYOUT /* --------- */.legal {
   background-color: black;
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
-.legal .card-title {
-  font-size: 2.5rem;
+.legal .info {
+  padding: 50%;
 }
 
-.legal .card-legal1 {
-  background-color: white;
-  color: black;
-  padding: 5% 4%;
-  text-align: center;
-  border: solid 1px;
-}
-
-.legal .card-legal2 {
-  background-color: #ffcd49;
-  color: black;
-  padding: 5% 4%;
-  text-align: center;
-  border: solid 1px;
-}
-
-.info-title {
+.legal .info-title {
   font-size: 2rem;
-  padding: 8%;
+  padding-top: 16%;
   text-align: center;
   text-transform: uppercase;
 }
 
-.info-text {
+.legal .info-text {
   font-size: 1.125rem;
   text-align: center;
 }
 
-.see-input {
+.legal .card-legal {
+  display: none;
+  color: black;
+  padding: 5% 4%;
+  text-align: center;
+  border: solid 1px;
+}
+
+.legal .card-legal:nth-child(2n) {
+  background-color: white;
+}
+
+.legal .card-legal:nth-child(2n + 1) {
+  background-color: #ffcd49;
+}
+
+.legal .see-input {
   border: 1px solid #ffff;
   color: white;
   padding: 5%;
@@ -86,9 +93,10 @@ body,div,span,applet,object,iframe {
   background-color: transparent;
   font-size: 1.125rem;
   font-weight: 400;
+  display: block;
 }
 
-.see-input-cards {
+.legal .see-input-cards {
   width: 60%;
   text-transform: uppercase;
 }/*BASIC CALCULATOR STYLE (text and box parameters) */.calculator {
@@ -241,31 +249,30 @@ li {
 }
 
 @media all and (min-width: 768px) {
+  .legal .info {
+    grid-row: 1 / 4;
+    padding: 20%;
+  }
+
   .legal {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
   }
 
-  .legal .info {
-    grid-row: 1 / 4;
-    padding: 20%;
-  }
-
-  .info {
-    grid-row: 1 / 4;
-    padding: 20%;
-  }
-
-  .info-title {
+  .legal .info-title {
     padding: 8%;
   }
 
-  .see-input {
+  .legal .card-legal {
+    display: block;
+  }
+
+  .legal .see-input {
     display: none;
   }
 
-  .see-input-cards {
+  .legal .see-input-cards {
     border: 1px solid black;
     padding: 2% 11%;
   }
@@ -334,27 +341,8 @@ li {
 }
 
 @media all and (min-width: 1024px) {
-  .legal {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .info {
-    grid-row: 1 / 4;
-    padding: 20%;
-  }
-
-  .info-title {
+  .legal .info-title {
     padding: 10%;
-  }
-
-  .see-input {
-    display: none;
-  }
-
-  .see-input-cards {
-    border: 1px solid black;
-    padding: 2% 11%;
   }
 
   .info-calculator {
