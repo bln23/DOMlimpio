@@ -5,7 +5,6 @@
 
 body,div,span,applet,object,iframe {
   margin: 0;
-  height: 100;
   font-family: Ubuntu, sans-serif;
 }/* --------- CORE ---------  */body {
   font-family: 'Ubuntu', sans-serif;
@@ -195,15 +194,24 @@ input::placeholder {
 }
 
 .slider .testimonys {
-  background-color: #f0f0f0;
-  padding: 14%;
+  padding: 2% 14%;
   margin: 0;
+  background-color: #f0f0f0;
 }
 
-.slider .testimony {
+.slider .testimonys .testimony:not(:first-child) {
+  display: none;
+}
+
+.slider .testimony-text {
   background-color: white;
   width: 100%;
   padding: 20px;
+}
+
+.slider .image-testimony {
+  border-radius: 75px;
+  width: 70px;
 }
 
 .slider .testimony-person {
@@ -295,14 +303,28 @@ input::placeholder {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 2% 14%;
+    background: url("../images/comillas-abajo.png") 5% 0 no-repeat, url("../images/comillas-arriba.png") 93% 0 no-repeat;
+    background-size: 96px;
+    background-color: #f0f0f0;
   }
 
-  .slider .testimony {
+  .slider .testimonys .testimony:not(:first-child) {
+    display: block;
+  }
+
+  .slider .testimonys .testimony:nth-child(2n) .testimony-person {
+    text-align: left;
+  }
+
+  .slider .testimonys .testimony:nth-child(2n + 1) .testimony-person {
+    text-align: right;
+  }
+
+  .slider .testimony-text {
     width: 95%;
   }
 
-  .slider .testimony .hidden {
+  .slider .testimony-text .hidden {
     display: inline-block;
   }
 
@@ -310,10 +332,6 @@ input::placeholder {
     text-align: right;
     padding: 30px 0;
     width: 95%;
-  }
-
-  .slider .testimony-person .hidden {
-    display: inline-block;
   }
 }
 
@@ -387,6 +405,10 @@ input::placeholder {
 
   .slider .testimony-title {
     margin-bottom: 3%;
+  }
+
+  .slider .testimonys {
+    background-size: 136px;
   }
 }
 
