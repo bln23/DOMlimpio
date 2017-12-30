@@ -1,0 +1,110 @@
+/* MAIN AREA */
+/* SECTION HERO*/
+.hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  top: 6rem;
+  position: relative;
+}
+.hero-container {
+  background-color: $colorPrimary;
+  height: 6.2rem;
+  margin-top: 6rem;
+  padding: 0.9rem 0.3rem;
+  position: static;
+}
+.hero-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  color: white;
+}
+.stat-list-one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3%;
+  height: 4rem;
+  justify-content: center;
+}
+.stat-num-one {
+  width: auto;
+  display: inline-flex;
+  align-items: center;
+}
+.stat-number-one {
+  color: $colorPrimary;
+  margin: 0;
+}
+.stat-text-one {
+  margin: 0;
+  margin-left: 3%;
+}
+.stat-list-two,.stat-list-three,.stat-num-two,.stat-number-two,.stat-text-two,.stat-num-three,.stat-number-three,.stat-text-three,.stat-par-two,.stat-par-three {
+  display: none;
+}
+.stat-par-one {
+  margin: 0;
+}
+/* ============
+RESPONSIVE HERO
+===============*/
+@media all and (min-width: 768px) {
+  .hero-text {
+    margin-left: 1.65rem;
+    margin-right: 1.65rem;
+  }
+  .stat {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1%;
+  }
+  .stat-list-one {
+    height: initial;
+  }
+  .stat-list-one,.stat-list-two,.stat-list-three {
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+  }
+  .stat-num-two-desktop,.stat-num-three-desktop {
+    width: auto;
+    display: inline-flex;
+    align-items: center;
+  }
+  .stat-number-two-desktop,.stat-number-three-desktop {
+    color: $colorPrimary;
+    margin: 0;
+  }
+  .stat-text-two-desktop,.stat-text-three-desktop {
+    margin: 0;
+    margin-left: 3%;
+  }
+  .stat-par-two-desktop,.stat-par-three-desktop {
+    margin: 0;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(255,205,73,0.5);
+    height: 20rem;
+    top: 30%;
+    margin-left: 8.22%;
+    margin-right: 8.22%;
+    position: absolute;
+  }
+  .hero-text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+  }
+  .stat {
+    margin-top: 6.5rem;
+  }
+}
