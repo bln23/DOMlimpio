@@ -1,4 +1,17 @@
-/* --------- CORE ---------  *//* COLORS *//* amarillo *//* gris claro *//* negro *//* gris oscuro *//* blanco *//* ELEMENTS POSITION *//* FONT SIZE *//* --------- COMPONENTS ---------  *//* FONT FAMILY *//* FONT SIZE *//* FONT WEIGHT */.submit-input {
+/* --------- CORE ---------  *//* COLORS *//* amarillo *//* gris claro *//* negro *//* gris oscuro *//* blanco *//* ELEMENTS POSITION *//* FONT SIZE */* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body,div,span,applet,object,iframe {
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1rem;
+}/* --------- COMPONENTS ---------  *//* FONT FAMILY *//* FONT SIZE *//* FONT WEIGHT */.submit-input {
   background-color: #ffcd49;
   color: #000;
   cursor: pointer;
@@ -38,21 +51,6 @@
   padding: 20px 40px;
   display: block;
   margin: 50px auto;
-}
-
-* {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-body,div,span,applet,object,iframe {
-  margin: 0;
-  font-family: 'Ubuntu', sans-serif;
-}
-
-body {
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 1rem;
 }/* --------- LAYOUT /* --------- *//* ========
 HEADER
 =========*/header {

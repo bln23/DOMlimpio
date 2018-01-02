@@ -8,8 +8,6 @@ body, div, span, applet, object, iframe {
 }
 
 body {
-  font-family: 'Ubuntu', sans-serif;
-  font-size: $mainBodySize;
   @media all and (min-width: 768px) {
     font-size: $secondaryBodySize;
   }
