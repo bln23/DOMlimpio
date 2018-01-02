@@ -1,0 +1,30 @@
+.about-us {
+  display: flex;
+  flex-direction: column;
+
+  .image-about-us {
+    width: 100%;
+    height: 100%;
+  }
+
+  @media all and (min-width:1024px) {
+    > * {
+      display: flex;
+      flex-direction: row;
+
+      .image-about-us {
+        width: 50%;
+        height: 50%;
+      }
+    }
+  }
+
+  > :nth-child(2n) {
+    flex-direction: row-reverse;
+  }
+
+  .about-us-container {
+    padding: 48px;
+    font-size: 1rem;
+  }
+}
