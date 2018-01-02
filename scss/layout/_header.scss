@@ -9,7 +9,7 @@ header {
   width: 100%;
   background-color: $colorPrimary;
   top: 0;
-  z-index: 2;
+  z-index: $zPosition;
   height: 20%;
   padding: 1%;
 }
@@ -59,7 +59,7 @@ header {
   align-items: center;
 }
 .item-nav-list {
-  color: white;
+  color: $colorQuinary;
   font-size: 0.7rem;
   text-decoration: none;
   text-transform: uppercase;
@@ -67,16 +67,14 @@ header {
   font-weight: bold;
 }
 .item-nav-list:hover {
-  color: black;
+  color: $colorTertiary;
   text-decoration: underline;
 }
 /* ==============
 RESPONSIVE HEADER
 ==================*/
 @media all and (min-width: 768px) {
-  body {
-    font-size: 20px;
-  }
+
   /* HEADER LEFT */
   .logo-img {
     width: 15%;
@@ -103,7 +101,7 @@ RESPONSIVE HEADER
     align-items: center;
   }
   .item-nav-list-desktop {
-    color: white;
+    color: $colorQuinary;
     text-decoration: none;
     text-transform: uppercase;
     cursor: pointer;
@@ -119,9 +117,7 @@ RESPONSIVE HEADER
 }
 
 @media all and (min-width: 1024px) {
-  body {
-    font-size: 24px;
-  }
+
   /* HEADER LEFT */
   .logo-img {
     width: 12%;
