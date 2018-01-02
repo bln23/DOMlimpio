@@ -1,5 +1,5 @@
 .legal {
-  background-color: black;
+  background-color: $colorTertiary;
   color: white;
   display: flex;
   flex-direction: column;
@@ -21,27 +21,35 @@
   }
 
   .info-title {
-    font-size: $secondaryTitleSize;
+    font-size: 1.5rem;
     padding-top: 4%;
     text-align: center;
     text-transform: uppercase;
     @media all and (min-width:768px) {
-      padding: 4%;
-      font-size: 2.5rem;
+      font-size: $thirdTitleSize;
+      padding-top: 0;
+    }
+    @media all and (min-width:1024px) {
+      font-size: $secondaryTitleSize;
     }
   }
 
   .info-text {
-    font-size: 1.5rem;
     text-align: center;
+    @media all and (min-width:768px) {
+        font-size: 1rem;
+    }
+    @media all and (min-width:1024px) {
+        font-size: 1.5rem;
+    }
   }
 
   .card-legal {
     display: none;
-    color: black;
+    color: $colorTertiary;
     padding: 5% 4%;
     text-align: center;
-    border: solid 1px;
+    border: solid 1px $colorTertiary;
     font-size: 1rem;
 
     &:nth-child(2n) {
@@ -58,13 +66,13 @@
   }
 
   .see-input {
-    border: 1px solid #ffff;
+    border: 1px solid white;
     color: white;
     padding: 5%;
     text-align: center;
     text-decoration: none;
-    font-size: 1.125rem;
-    font-weight: 400;
+    font-size: $fourthTitleSize;
+    font-weight: $normalFontWeight;
     text-decoration: none;
     font-family: 'Ubuntu', sans-serif;
     background-color: transparent;
@@ -79,8 +87,9 @@
   .see-input-cards{
     text-transform: uppercase;
     @media all and (min-width:1024px) {
-      border: 1px solid black;
-      padding: 3% 8%;
+      border: 1px solid $colorTertiary;
+      padding: 20px 40px;
+      font-weight: 700;
     }
   }
 }
