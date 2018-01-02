@@ -16,13 +16,14 @@ body, div, span, applet, object, iframe, {
 /* --------- COMPONENTS ---------  */
 @import 'components/typography-calculator';
 @import 'components/buttons';
-@import 'components/hero';
-@import 'components/info';
 
 /* --------- LAYOUT /* --------- */
+@import 'layout/header';
+@import 'layout/hero';
+@import 'layout/info';
+@import 'layout/about-us';
 @import 'layout/legal';
 @import 'layout/calculator';
 @import 'layout/slider';
 @import 'layout/accordion';
 @import 'layout/cards';
-@import 'layout/header';
