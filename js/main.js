@@ -45,3 +45,17 @@ for (var i = 0; i < editButton.length; i++) {
   editButton[i].addEventListener('click', showContent);
 };
 */
+
+//MENU TRIGGER
+
+function init(){
+  var menu = document.querySelector('.menu-nav');
+  menu.addEventListener('click', menuTrigger);
+}
+
+function menuTrigger(){
+  var menuHidden = document.querySelector('.nav-list');
+  menuHidden.classList.toggle('hidden');
+}
+
+init();
