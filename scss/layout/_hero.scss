@@ -8,11 +8,25 @@
   position: relative;
 }
 .hero-container {
-  background-color: $colorPrimary;
-  height: 6.2rem;
-  margin-top: 6rem;
-  padding: 0.9rem 0.3rem;
-  position: static;
+ height: 65vh;
+ background-image: url('/images/mujeres2.jpg');
+ background-size: cover;
+ background-repeat: no-repeat;
+ @media all and (min-width: 768px) {
+   height: 75vh;
+ }
+ @media all and (min-width:  1024px) {
+   height: 90vh;
+ }
+}
+.text-hero-container {
+  background-color: #ffcd49;
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    color: $colorQuintary;
+    padding: 0.9rem 0.3rem;
+    position: static;
   @media all and (min-width: 1024px) {
     display: flex;
     flex-direction: column;
@@ -29,7 +43,8 @@
   margin-top: 0;
   margin-bottom: 0;
   text-align: center;
-  color: $colorQuinary;
+  color: $colorQuintary;
+  padding: 0.2rem;
   @media all and (min-width: 768px) {
     margin-left: 1.65rem;
     margin-right: 1.65rem;
@@ -37,7 +52,7 @@
   @media all and (min-width: 1024px) {
     font-size: 2rem;
     font-weight: $boldFontWeight;
-    color: $colorQuinary;
+    color: $colorQuintary;
   }
 }
 .stat {
