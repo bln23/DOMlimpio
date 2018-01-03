@@ -10,12 +10,14 @@ header {
   background-color: $colorPrimary;
   top: 0;
   z-index: $upper;
-  height: 20%;
-  padding: 1rem;
+  height: 12%;
+  padding: 0.5rem;
+  border-bottom: 1px solid $colorTertiary;
 }
 /* HEADER LEFT */
 .logo-img {
-  width: 30%;
+  width: 3rem;
+  height: 3rem;
   @media all and (min-width: 768px) {
     width: 15%;
   }
@@ -36,7 +38,7 @@ header {
     width: 100%;
   }
 }
-.menu-nav{
+.menu-nav {
   appearance: none;
   border: none;
   background-color: $colorPrimary;
@@ -74,7 +76,7 @@ header {
   }
 }
 .item-nav-list {
-  color: $colorQuinary;
+  color: $colorTertiary;
   font-size: 0.7rem;
   text-decoration: none;
   text-transform: uppercase;
@@ -107,7 +109,7 @@ header {
 }
 .item-nav-list-desktop {
   @media all and (min-width: 768px) {
-    color: $colorQuinary;
+    color: $colorQuintary;
     text-decoration: none;
     text-transform: uppercase;
     cursor: pointer;
@@ -117,7 +119,7 @@ header {
 .item-nav-list-desktop:hover {
   display: none;
   @media all and (min-width: 768px) {
-    color: black;
+    color: $colorTertiary;
     text-decoration: underline;
   }
 }
