@@ -55,7 +55,7 @@ function init(){
 
 function menuTrigger(){
   var menuHidden = document.querySelector('.nav-list');
-  menuHidden.classList.toggle('hidden');
+  menuHidden.classList.toggle('active');
 }
 
 init();
