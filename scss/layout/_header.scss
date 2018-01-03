@@ -30,8 +30,6 @@ header {
   margin-left: 0;
   padding: 0;
   align-self: center;
-  width: 20%;
-  height: 40%;
   @media all and (min-width: 768px) {
     display: flex;
     justify-content: center;
@@ -49,28 +47,35 @@ header {
     display: none;
   }
 }
+.image-menu {
+  width: 2rem;
+  display: block;
+}
 .nav-list {
   font-size: 2rem;
   position: fixed;
   width: 35%;
-  left: 65%; top: 20%;
+  left: 100%;
+  top: 3.9rem;
   background-color: $colorPrimary;
   margin: 0;
   padding: 0 6rem;
-  text-align: right;
+  transition: transform 300ms;
+  &.active {
+    transform:translate3d(-100%,0,0);
+  }
+
   @media all and (min-width: 768px) {
     display: none;
   }
 }
-.hidden{
-  display: none;
-}
+
 .item-list {
-  padding: 0.2rem;
+  /*padding: 0.2rem;*/
   list-style: none;
-  display: flex;
+  /*display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: center;*/
   @media all and (min-width: 768px) {
     display: none;
   }
