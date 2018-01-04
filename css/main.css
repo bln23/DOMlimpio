@@ -139,7 +139,7 @@ HEADER
 
 .nav-list-desktop {
   display: none;
-}/* MAIN AREA *//* SECTION HERO*/.hero-img {
+}/* MAIN AREA *//* SECTION HERO*/.hero .hero-img {
   width: 100%;
   height: auto;
   display: block;
@@ -147,16 +147,16 @@ HEADER
   position: relative;
 }
 
-.hero-container {
+.hero .hero-container {
   height: 65vh;
   background-image: url("../images/mujeres2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.text-hero-container {
+.hero .text-hero-container {
   background-color: #ffcd49;
-  height: 8rem;
+  height: 6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -164,12 +164,13 @@ HEADER
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   color: #ffffff;
-  padding: 0.9rem 0.3rem;
-  position: static;
 }
 
-.hero-text {
+.hero .hero-text {
   margin-top: 0;
   margin-bottom: 0;
   text-align: center;
@@ -177,7 +178,7 @@ HEADER
   padding: 0.2rem;
 }
 
-.stat-list-one {
+.hero .stat-list-one {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -188,18 +189,17 @@ HEADER
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin: 1rem;
-  height: 4rem;
+  height: 6rem;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
 }
 
-.stat-list-two,.stat-list-three {
+.hero .stat-list-two,.hero .stat-list-three {
   display: none;
 }
 
-.stat-num-one {
+.hero .stat-num-one {
   width: auto;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -209,21 +209,21 @@ HEADER
   align-items: center;
 }
 
-.stat-number-one {
+.hero .stat-number-one {
   color: #ffcd49;
   margin: 0;
 }
 
-.stat-text-one {
+.hero .stat-text-one {
   margin: 0;
   margin-left: 0.2rem;
 }
 
-.stat-num-two,.stat-number-two,.stat-text-two,.stat-num-three,.stat-number-three,.stat-text-three,.stat-par-two,.stat-par-three {
+.hero .stat-num-two,.hero .stat-number-two,.hero .stat-text-two,.hero .stat-num-three,.hero .stat-number-three,.hero .stat-text-three,.hero .stat-par-two,.hero .stat-par-three {
   display: none;
 }
 
-.stat-par-one {
+.hero .stat-par-one {
   margin: 0;
 }/* SECTION INTRO INFO*/.intro-info {
   display: block;
@@ -625,41 +625,40 @@ input::placeholder {
     text-decoration: underline;
   }
 
-  .hero-container {
+  .hero .hero-container {
     height: 75vh;
   }
 
-  .hero-text {
+  .hero .hero-text {
     margin-left: 1.65rem;
     margin-right: 1.65rem;
   }
 
-  .stat {
+  .hero .stat {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    padding: 0.5rem;
+    height: 6rem;
   }
 
-  .stat-list-one {
+  .hero .stat-list-one {
     height: initial;
     display: inline-block;
     text-align: center;
     margin: 0;
   }
 
-  .stat-list-two,.stat-list-three {
+  .hero .stat-list-two,.hero .stat-list-three {
     display: inline-block;
     text-align: center;
     margin: 0;
+    margin-left: 2rem;
   }
 
-  .stat-num-two-desktop,.stat-num-three-desktop {
+  .hero .stat-num-two-desktop,.hero .stat-num-three-desktop {
     width: auto;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -669,17 +668,17 @@ input::placeholder {
     align-items: center;
   }
 
-  .stat-number-two-desktop,.stat-number-three-desktop {
+  .hero .stat-number-two-desktop,.hero .stat-number-three-desktop {
     color: #ffcd49;
     margin: 0;
   }
 
-  .stat-text-two-desktop,.stat-text-three-desktop {
+  .hero .stat-text-two-desktop,.hero .stat-text-three-desktop {
     margin: 0;
     margin-left: 0.2rem;
   }
 
-  .stat-par-two-desktop,.stat-par-three-desktop {
+  .hero .stat-par-two-desktop,.hero .stat-par-three-desktop {
     margin: 0;
   }
 
@@ -862,11 +861,11 @@ input::placeholder {
     height: 4rem;
   }
 
-  .hero-container {
+  .hero .hero-container {
     height: 90vh;
   }
 
-  .text-hero-container {
+  .hero .text-hero-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -879,20 +878,20 @@ input::placeholder {
     justify-content: center;
     background-color: rgba(255, 205, 73, 0.5);
     height: 20rem;
-    top: 30%;
+    top: 23%;
     margin-left: 7rem;
     margin-right: 7rem;
     position: absolute;
   }
 
-  .hero-text {
+  .hero .hero-text {
     font-size: 2rem;
     font-weight: 700;
     color: #ffffff;
   }
 
-  .stat {
-    margin-top: 6.5rem;
+  .hero .stat {
+    margin: 1rem;
   }
 
   .intro-info-text {
