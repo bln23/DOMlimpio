@@ -29,3 +29,16 @@ function menuTrigger(){
 }
 
 init();
+
+
+//CALCULATOR
+var hoursInput = document.querySelector('#hours-input');
+var buttonCalc = document.querySelector('#submit-input');
+
+buttonCalc.addEventListener('click',calculator);
+
+function calculator() {
+  var hours = hoursInput.value;
+  var numberHours = parseInt(hours);
+  if ()
+}
