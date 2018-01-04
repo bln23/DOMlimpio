@@ -149,14 +149,14 @@ HEADER
 
 .hero-container {
   height: 65vh;
-  background-image: url("/images/mujeres2.jpg");
+  background-image: url("/../images/mujeres2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .text-hero-container {
   background-color: #ffcd49;
-  height: 6rem;
+  height: 8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -164,10 +164,9 @@ HEADER
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   color: #ffffff;
+  padding: 0.9rem 0.3rem;
+  position: static;
 }
 
 .hero-text {
@@ -189,7 +188,8 @@ HEADER
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 6rem;
+  margin: 1rem;
+  height: 4rem;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -641,7 +641,9 @@ input::placeholder {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    height: 6rem;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    padding: 0.5rem;
   }
 
   .stat-list-one {
@@ -655,7 +657,6 @@ input::placeholder {
     display: inline-block;
     text-align: center;
     margin: 0;
-    margin-left: 2rem;
   }
 
   .stat-num-two-desktop,.stat-num-three-desktop {
@@ -862,7 +863,7 @@ input::placeholder {
   }
 
   .hero-container {
-    height: 85vh;
+    height: 90vh;
   }
 
   .text-hero-container {
@@ -878,7 +879,7 @@ input::placeholder {
     justify-content: center;
     background-color: rgba(255, 205, 73, 0.5);
     height: 20rem;
-    top: 23%;
+    top: 30%;
     margin-left: 7rem;
     margin-right: 7rem;
     position: absolute;
@@ -891,7 +892,7 @@ input::placeholder {
   }
 
   .stat {
-    margin: 1rem;
+    margin-top: 6.5rem;
   }
 
   .intro-info-text {
