@@ -57,3 +57,10 @@ function menuTrigger(){
 }
 
 init();
+
+//animation slider
+$('testimonys').slick({
+  infinite: true,
+  slidesToShow: 2,
+  slidesToScroll: 2
+});
