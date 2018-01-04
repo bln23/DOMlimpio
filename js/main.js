@@ -1,7 +1,5 @@
 'use strict';
 
-console.log('>> Ready :)');
-
 var acc = document.getElementsByClassName("accordion");
 var i;
 
