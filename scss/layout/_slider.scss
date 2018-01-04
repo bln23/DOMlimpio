@@ -43,13 +43,6 @@
       .testimony:not(:first-child) {
         display: block;
       }
-      .testimony:nth-child(2n) .testimony-person {
-        text-align: left;
-      }
-
-      .testimony:nth-child(2n + 1) .testimony-person {
-        text-align: right;
-      }
     }
 
     @media all and (min-width:1024px) {
@@ -73,6 +66,8 @@
   .image-testimony {
     border-radius: 75px;
     width: 70px;
+    display: block;
+    margin: auto;
   }
 
   .testimony-person {
@@ -81,7 +76,6 @@
     text-align: center;
     font-size: 1rem;
     @media all and (min-width:768px){
-      text-align: right;
       padding: 30px 0;
       width: 95%;
     }
@@ -91,6 +85,12 @@
     list-style: none;
   }
 
-  .slick-prev y .slick-next
+  .slick-prev .arrow {
+  }
+
+  .slick-next .arrow {
+    width: 20px;
+    weight: 20px;
+  }
 
 }
