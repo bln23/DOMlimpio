@@ -149,7 +149,7 @@ HEADER
 
 .hero-container {
   height: 65vh;
-  background-image: url("/images/mujeres2.jpg");
+  background-image: url("../images/mujeres2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -862,7 +862,7 @@ input::placeholder {
   }
 
   .hero-container {
-    height: 85vh;
+    height: 90vh;
   }
 
   .text-hero-container {
