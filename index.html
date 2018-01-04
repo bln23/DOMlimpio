@@ -2,101 +2,277 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="styles/master.css" media="all">
+  <link rel="stylesheet" href="css/main.css" media="all">
   <title>Casa San Ignacio</title>
 </head>
 <body>
-
-  <header>
-    <nav>
-
+<header>
+    <img class="logo-img" src="images/logocasasanignacio.png" alt="logo de san ignacio">
+    <nav class="nav-section">
+      <ul class="nav-list-desktop">
+        <li class="item-list-desktop"><a class="item-nav-list-desktop" href="#cursos">cursos</a></li>
+        <li class="item-list-desktop"><a class="item-nav-list-desktop" href="#info">información legal</a></li>
+        <li class="item-list-desktop"><a class="item-nav-list-desktop" href="#empleo">empleo</a></li>
+      </ul>
+      <button class="menu-nav" type="button" name="button-nav"><img class="image-menu" src="images/menu-button.svg" alt="icono menu">
+      </button>
     </nav>
+    <ul class="nav-list">
+      <li class="item-list"><a class="item-nav-list" href="#cursos">cursos</a></li>
+      <li class="item-list"><a class="item-nav-list" href="#info">legalidad</a></li>
+      <li class="item-list"><a class="item-nav-list" href="#empleo">empleo</a></li>
+    </ul>
   </header>
-
   <main>
-
     <section class="hero">
-      <div class="img">
-        <h1></h1>
-        <img src="" alt="">
+      <!-- <img class="hero-img" src="images/mujeres2.jpg" alt="imagen de la página de casa san ignacio"> -->
+      <div class="hero-container">
       </div>
-
-      <div class="stat-list">
-        <div class="stat">
+      <div class="text-hero-container">
+      <h4 class="hero-text">Si trabajas como empleada doméstica, cuidadora, asistenta o piensas serlo
+      </h4>
+      <h4 class="hero-text">Te ayudamos y asesoramos
+      </h4>
+      <h4 class="hero-text">Conócenos
+      </h4>
+      </div>
+      <div class="stat">
+        <div class="stat-list-one">
+          <div class="stat-num-one">
+            <h1 class="stat-number-one">98
+            </h1>
+            <h3 class="stat-text-one">millones
+            </h3>
+          </div>
+          <h4 class="stat-par-one">Mujeres migrantes internacionales
+          </h4>
         </div>
-        <div class="stat">
+        <div class="stat-list-two">
+          <div class="stat-num-two-desktop">
+            <h1 class="stat-number-two-desktop">25
+            </h1>
+            <h3 class="stat-text-two-desktop">millones
+            </h3>
+          </div>
+          <h4 class="stat-par-two-desktop">Mujeres migrantes internacionales
+          </h4>
         </div>
-        <div class="stat">
+        <div class="stat-list-three">
+          <div class="stat-num-three-desktop">
+            <h1 class="stat-number-three-desktop">05
+            </h1>
+            <h3 class="stat-text-three-desktop">millones
+            </h3>
+          </div>
+          <h4 class="stat-par-three-desktop">Mujeres migrantes internacionales
+          </h4>
         </div>
       </div>
     </section>
-
     <section class="intro-info">
-      <h1></h1>
-      <img src="" alt="">
+      <img class="info-img" src="images/street.jpg" alt="imagen de la página de información de casa san ignacio">
+      <h4 class="intro-info-text">Soñamos con alcanzar la justicia social y la plena dignidad de todas las personas
+      </h4>
+      <p class="intro-par">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+      </p>
+      <button class="button-inf-org" type="button" name="button-inf"><a class="text-button-org" href="#info-org">Más información</a></button>
     </section>
-
     <section class="card-list">
-      <div class="card">
-      </div>
-      <div class="card">
-      </div>
-      <div class="card">
-      </div>
-    </section>
+      <h2 id ="cursos" class="title-card-list">CASA SAN IGNACIO</h2>
+      <h3 class="text-card-list">CENTRO DE COLABORACION, PARTICIPACION Y COMPROMISO SOCIAL</h3>
+      <div class="card-container">
+        <div class="card">
+          <img class="card-icon" src="images/cursos.png" alt="">
+          <h3 class="title-card hide">Cursos</h2>
+            <p class="text-card hide">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste fugit, odit ex mollitia, ullam minima, corporis dolorum, alias id dignissimos deleniti ad ipsum adipisci blanditiis fuga omnis dolores optio. Alias.
+            </p>
+            <button class="primaryButton hide" type="button">VER</button>
+          </div>
+          <div class="card">
+            <img class="card-icon" src="images/info.png" alt="">
+            <h3 class="title-card hide">Informacion</h2>
+              <p class="text-card hide">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste fugit, odit ex mollitia, ullam minima, corporis dolorum, alias id dignissimos deleniti ad ipsum adipisci blanditiis fuga omnis dolores optio. Alias.
+              </p>
+              <button class="primaryButton hide" type="button">VER</button>
+            </div>
+            <div class="card">
+              <img class="card-icon" src="images/job.png" alt="">
+              <h3 class="title-card hide">Trabajo</h2>
+                <p class="text-card hide">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste fugit, odit ex mollitia, ullam minima, corporis dolorum, alias id dignissimos deleniti ad ipsum adipisci blanditiis fuga omnis dolores optio. Alias.
+                </p>
+                <button class="primaryButton hide" type="button">VER</button>
+              </div>
+            </div>
+          </section>
 
-    <section class="about-us">
-      <img src="" alt="">
-      <p></p>
-      <img src="" alt="">
-      <p></p>
-    </section>
+          <section class="about-us">
+            <div>
+              <img class="image-about-us" src="images/slack-imgs-1.jpg" alt="">
+              <div class="about-us-container">
+                <h3>Lorem ipsum dolor sit amet</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <h3>Lorem ipsum dolor sit amet</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+              </div>
+            </div>
+            <div>
+              <img class="image-about-us" src="images/slack-imgs-2-mobile.jpg" alt="">
+              <div class="about-us-container">
+                <h3>Lorem ipsum dolor sit amet</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <h3>Lorem ipsum dolor sit amet</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+              </div>
+            </div>
+          </section>
 
-    <section class="card-list">
-      <div class="card">
-      </div>
-      <div class="card">
-      </div>
-      <div class="card">
-      </div>
-    </section>
+          <section class="card-list hide">
+            <h2 class="title-card-list">CURSOS</h2>
+            <p class="text-card-list">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi facilis sunt quasi quaerat quas consequuntur fuga esse explicabo beatae dolore corporis nesciunt.
+            </p>
+            <div class="card-container">
+              <div class="card">
+                <h3 class="title-card hide">Curso 1</h2>
+                  <hr class="line">
+                  <p class="text-card hide">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste fugit, odit ex mollitia, ullam minima, corporis dolorum, alias id dignissimos deleniti ad ipsum adipisci blanditiis fuga omnis dolores optio.
+                  </p>
+                  <button class="primaryButton" type="button">VER</button>
+                </div>
+                <div class="card">
+                  <h3 class="title-card hide">Curso 2</h2>
+                    <hr class="line">
+                    <p class="text-card hide">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste fugit, odit ex mollitia, ullam minima, corporis dolorum, alias id dignissimos deleniti ad ipsum adipisci blanditiis fuga omnis dolores optio.
+                    </p>
+                    <button class="primaryButton" type="button">VER</button>
+                  </div>
+                  <div class="card">
+                    <h3 class="title-card hide">Curso 3</h2>
+                      <hr class="line">
+                      <p class="text-card hide">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste fugit, odit ex mollitia, ullam minima, corporis dolorum, alias id dignissimos deleniti ad ipsum adipisci blanditiis fuga omnis dolores optio.
+                      </p>
+                      <button class="primaryButton" type="button">VER</button>
+                    </div>
+                  </div>
+                </section>
 
-    <section class="legal">
-      <div class="info">
-        <p class="legal"></p>
-        <p class="legal"></p>
-        <p class="legal"></p>
-      </div>
-    </section>
+                <section class="legal">
+                  <div class="info">
+                    <h2 id ="info" class="info-title">Sabías que...</h2>
+                    <h4 class="info-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </h4>
+                    <p class="info-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <a class="see-input" target="_blank" href="#">MAS INFORMACIÓN</a>
+                  </div>
+                  <div class="card-legal">
+                    <h4 class"card-title">Lorem ipsum dolor sit amet</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <a class="see-input-cards" target="_blank" href="#">VER</a>
+                  </div>
+                  <div class="card-legal">
+                    <h4 class"card-title">Lorem ipsum dolor sit amet</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <a class="see-input-cards" target="_blank" href="#">VER</a>
+                  </div>
+                  <div class="card-legal">
+                    <h4 class"card-title">Lorem ipsum dolor sit amet</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <a class="see-input-cards" target="_blank" href="#">VER</a>
+                  </div>
+                </section>
 
-    <section class="calculator">
-      <div class="info-cal">
-      </div>
-      <div class="results">
-      </div>
-    </section>
+                <section class="calculator">
+                  <div class="info-calculator">
+                    <h3 id="empleo" class="tertiary-title">¿Sabes cuanto cobrar por tu trabajo?</h3>
+                    <h4 class="fourth-title calc-subtitle">Lorem ipsum dolor sit consectetuer adipiscing elit, sed dia</h4>
+                    <p class="about-calculator-function">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                  </div>
+                  <div class="form-calculator">
+                    <form action="index.html" method="post">
+                      <h4 class="fourth-title intro-calc-data">Jornada laboral:</h4>
+                      <input type="number" name="hours-input" value="" class="hours-input" placeholder="horas al día">
+                      <input type="number" name="days-input" value="" class="days-input" placeholder="días a la semana">
+                      <input type="button" name="submit" class="submit-input" value="CONSULTAR">
+                    </form>
+                    <div class="answer-calculator">
+                      <h4 class="fourth-title hour-value-title">Tu hora de trabajo vale:</h4>
+                      <h3 class="tertiary-title hour-value">€0.00</h3>
+                      <h4 class="fourth-title salary-value-title">Tu salario mensual:</h4>
+                      <h3 class="tertiary-title salary-value">€0.00</h3>
+                    </div>
+                  </div>
+                </section>
 
-    <section class="slider">
-      <div class="">
-      </div>
-      <div class="">
-      </div>
-      <div class="">
-      </div>
-    </section>
+                <section class="slider">
+                  <div class="title-slider">
+                    <h3 class="testimony-title">Testimonios</h3>
+                    <p class="fourth-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  </div>
+                  <ul class="testimonys">
+                    <li class="testimony">
+                      <p class="testimony-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                      <div class="testimony-person">
+                        <img class="image-testimony" src="images/150x150.png" alt="">
+                        <h4>Maria Calderon</h4>
+                        <p>Lorem ipsum dolor sit amet</p>
+                      </div>
+                    </li>
+                    <li class="testimony">
+                      <p class="testimony-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                      <div class="testimony-person">
+                        <img class="image-testimony" src="images/150x150-copia.png" alt="">
+                        <h4>Javier Murcia</h4>
+                        <p>Lorem ipsum dolor sit amet</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </section>
+              <section class="acor">
+                <h3 class="title-acor">Preguntas frecuentes</h3>
+                <button class="accordion">¿Sabias qué?</button>
+                <div class="panel">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
 
-    <section class="acor">
-    <div class="text">
-    </div>
-    </section>
+                <button class="accordion">¿Sabias qué?</button>
+                <div class="panel">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
 
-  </main>
+                <button class="accordion">¿Sabias qué?</button>
+                <div class="panel">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
 
-  <footer>
-  </footer>
+                <button class="accordion">¿Sabias qué?</button>
+                <div class="panel">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </section>
+            </main>
 
-  <script type="text/javascript" src="js/main.js"></script>
-</body>
-</html>
+            <footer>
+            </footer>
+
+            <script type="text/javascript" src="js/main.js"></script>
+          </body>
+          </html>

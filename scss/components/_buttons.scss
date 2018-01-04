@@ -1,0 +1,41 @@
+.submit-input {
+  background-color: $colorPrimary;
+  color: $colorTertiary;
+  cursor: pointer;
+  font-size: $fourthTitleSize;
+  font-weight: $boldFontWeight;
+}
+
+.see-input-cards {
+  color: black;
+  border: 1px solid black;
+  padding: 1% 4%;
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: transparent;
+  font-size: $fourthTitleSize;
+  font-weight: $normalFontWeight;
+  display: inline-block;
+}
+
+.info-more-input{
+  color: black;
+  padding: 1% 7%;
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: white;
+  font-size: $fourthTitleSize;
+  font-weight: $normalFontWeight;
+}
+
+.primaryButton {
+  background-color: inherit;
+  color: $colorTertiary;
+  cursor: pointer;
+  font-size: $fourthTitleSize;
+  font-weight: $boldFontWeight;
+  border: 1px solid $colorTertiary;
+  padding: 20px 40px;
+  display: block;
+  margin: 50px auto;
+}

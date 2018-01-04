@@ -1,0 +1,64 @@
+/* SECTION INTRO INFO*/
+.intro-info {
+  display: block;
+  text-align: center;
+}
+.intro-info-text {
+  margin: 1.5rem;
+  @media all and (min-width: 768px) {
+    color: $colorQuintary;
+    position: absolute;
+    text-align: left;
+    margin-left: 2.9rem;
+    margin-right: 20rem;
+    margin-top: -17rem;
+  }
+  @media all and (min-width: 1024px) {
+    margin-top: -17rem;
+  }
+}
+.info-img {
+  display: block;
+  width: 100%;
+}
+.intro-par {
+  display: none;
+  @media all and (min-width: 768px) {
+    color: $colorQuintary;
+    position: absolute;
+    text-align: left;
+    margin-left: 2.9rem;
+    margin-right: 20rem;
+    display: block;
+    font-size: 1rem;
+    margin-top: -13rem;
+  }
+  @media all and (min-width: 1024px) {
+    font-size: 1.2rem;
+    margin-top: -13rem;
+  }
+}
+.button-inf-org {
+  display: none;
+  @media all and (min-width: 768px) {
+    display: block;
+    appearance: none;
+    border: none;
+    background-color: white;
+    font-size: 1.2rem;
+    padding: 1rem;
+    margin-left: 2.9rem;
+    margin-top: -5.8rem;
+    margin-bottom: 0;
+    position: absolute;
+    z-index: $lower;
+  }
+}
+  .text-button-org {
+    display: none;
+    @media all and (min-width: 768px) {
+      display: block;
+      color: $colorTertiary;
+      text-decoration: none;
+  }
+}

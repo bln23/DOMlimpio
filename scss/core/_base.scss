@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+body, div, span, applet, object, iframe {
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  @media all and (min-width: 768px) {
+    font-size: $secondaryBodySize;
+  }
+  @media all and (min-width: 1024px) {
+    font-size: $thirdBodySize;
+  }
+}

@@ -1,0 +1,133 @@
+/* ========
+HEADER
+=========*/
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  background-color: $colorPrimary;
+  top: 0;
+  z-index: $upper;
+  height: 4rem;
+  padding: 0.5rem;
+  border-bottom: 1px solid $colorTertiary;
+  @media all and (min-width: 1024px) {
+    height: 5rem;
+    padding: 0.7rem;
+  }
+}
+/* HEADER LEFT */
+.logo-img {
+  width: 3rem;
+  height: 3rem;
+  @media all and (min-width: 1024px) {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+/* HEADER RIGHT */
+.nav-section {
+  margin-left: 0;
+  padding: 0;
+  align-self: center;
+  @media all and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+.menu-nav {
+  appearance: none;
+  border: none;
+  background-color: $colorPrimary;
+  font-size: 1.5rem;
+  width: 100%;
+  height: 100%;
+  @media all and (min-width: 768px) {
+    display: none;
+  }
+}
+.image-menu {
+  width: 1.5rem;
+  display: block;
+}
+.nav-list {
+  font-size: 2rem;
+  position: fixed;
+  width: 35%;
+  left: 100%;
+  top: 3.9rem;
+  background-color: $colorPrimary;
+  margin: 0;
+  padding-top: 0;
+  padding-left: 1.5rem;
+  padding-bottom: 0.7rem;
+  transition: transform 300ms;
+  &.active {
+    transform:translate3d(-100%,0,0);
+  }
+
+  @media all and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.item-list {
+  /*padding: 0.2rem;*/
+  list-style: none;
+  /*display: flex;
+  justify-content: flex-end;
+  align-items: center;*/
+  @media all and (min-width: 768px) {
+    display: none;
+  }
+}
+.item-nav-list {
+  color: $colorTertiary;
+  font-size: 0.7rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
+  @media all and (min-width: 768px) {
+    display: none;
+  }
+}
+.item-nav-list:hover {
+  color: $colorTertiary;
+  text-decoration: underline;
+}
+.nav-list-desktop {
+  display: none;
+  @media all and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: $colorPrimary;
+    margin: 0;
+    padding: 0;
+  }
+}
+.item-list-desktop {
+  @media all and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+}
+.item-nav-list-desktop {
+  @media all and (min-width: 768px) {
+    color: $colorQuintary;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+  }
+}
+.item-nav-list-desktop:hover {
+  @media all and (min-width: 768px) {
+    color: $colorTertiary;
+    text-decoration: underline;
+  }
+}

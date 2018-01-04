@@ -1,0 +1,84 @@
+.card-container {
+  margin: 50px 0;
+  @media all and (min-width: 924px) {
+    margin: 50px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  @media all and (min-width: 1024px) {
+      margin: 50px 70px;
+  }
+  @media all and (min-width: 1224px) {
+      margin: 50px 120px;
+  }
+}
+
+.card {
+ background: $colorPrimary;
+ padding: 20px 0;
+ border-top: 1px solid $colorTertiary;
+ @media all and (min-width: 924px) {
+   width: 31.5%;
+   padding: 30px 0;
+   border: none;
+ }
+}
+
+.card-icon {
+  width: 100px;
+  display: block;
+  margin: 20px auto;
+  @media all and (min-width: 924px) {
+    margin: 50px auto;
+  }
+}
+
+.text-card {
+  margin: 50px 30px;
+  @media all and (min-width: 1224px) {
+      margin: 60px;
+  }
+}
+
+.title-card {
+  margin: 50px 0px;
+  text-align: center;
+}
+
+.hide{
+  display: none;
+  @media all and (min-width: 924px) {
+    display: block;
+  }
+
+}
+
+.text-card-list {
+  font-size: $fourthTitleSize;
+  text-align: center;
+  margin: 30px 70px;
+  @media all and (min-width: 924px) {
+    margin: 50px 120px;
+  }
+  @media all and (min-width: 1124px) {
+    margin: 70px 210px;
+  }
+}
+
+.title-card-list {
+  font-size: $thirdTitleSize;
+  text-align: center;
+  margin: 30px 70px;
+}
+
+.line {
+  border: 0;
+  height: 1px;
+  background-color: $colorTertiary;
+  width: 70%;
+  @media all and (min-width: 1124px) {
+    width: 60%;
+  }
+}
