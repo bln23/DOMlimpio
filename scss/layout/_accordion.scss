@@ -3,7 +3,7 @@
   background-color: $colorPrimary;
   color: $colorTertiary;
   cursor: pointer;
-  padding: 20px;
+  padding: 35px;
   width: 100%;
   border: none;
   border-bottom: 1.5px solid $colorTertiary;
@@ -18,10 +18,27 @@
   background-color: #F6AE2D;
 }
 
+.accordion:after {
+    content: '\002B';
+    color: #000;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
 .panel {
-  padding: 0 18px;
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
+    padding: 0px 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+
+.title-acor {
+  text-align: center;
 }

@@ -10,7 +10,7 @@ body,div,span,applet,object,iframe {
   background-color: #ffcd49;
   color: #000;
   cursor: pointer;
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 
@@ -21,7 +21,7 @@ body,div,span,applet,object,iframe {
   text-decoration: none;
   font-family: 'Ubuntu', sans-serif;
   background-color: transparent;
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   font-weight: 400;
   display: inline-block;
 }
@@ -32,7 +32,7 @@ body,div,span,applet,object,iframe {
   text-decoration: none;
   font-family: 'Ubuntu', sans-serif;
   background-color: white;
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 
@@ -40,7 +40,7 @@ body,div,span,applet,object,iframe {
   background-color: inherit;
   color: #000;
   cursor: pointer;
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   font-weight: 700;
   border: 1px solid #000;
   padding: 20px 40px;
@@ -328,12 +328,12 @@ HEADER
   padding: 5%;
   text-align: center;
   text-decoration: none;
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   font-weight: 400;
   text-decoration: none;
   font-family: 'Ubuntu', sans-serif;
   background-color: transparent;
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   font-weight: 400;
   display: block;
 }
@@ -355,7 +355,7 @@ HEADER
 }
 
 .fourth-title {
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   color: #000;
 }
 
@@ -471,13 +471,13 @@ input::placeholder {
   background-color: #ffcd49;
   color: #000;
   cursor: pointer;
-  padding: 20px;
+  padding: 35px;
   width: 100%;
   border: none;
   border-bottom: 1.5px solid #000;
   text-align: left;
   outline: none;
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   font-weight: 500;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -487,13 +487,29 @@ input::placeholder {
   background-color: #F6AE2D;
 }
 
+.accordion:after {
+  content: '\002B';
+  color: #000;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
 .panel {
-  padding: 0 18px;
+  padding: 0px 18px;
   background-color: white;
   max-height: 0;
   overflow: hidden;
   -webkit-transition: max-height 0.2s ease-out;
   transition: max-height 0.2s ease-out;
+}
+
+.title-acor {
+  text-align: center;
 }
 
 .card-container {
@@ -526,7 +542,7 @@ input::placeholder {
 }
 
 .text-card-list {
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   text-align: center;
   margin: 30px 70px;
 }
