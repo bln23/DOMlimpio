@@ -65,7 +65,7 @@ header {
   padding-left: 1.5rem;
   padding-bottom: 0.7rem;
   transition: transform 300ms;
-  &.active {
+  &.active-menu {
     transform:translate3d(-100%,0,0);
   }
 
@@ -75,11 +75,7 @@ header {
 }
 
 .item-list {
-  /*padding: 0.2rem;*/
   list-style: none;
-  /*display: flex;
-  justify-content: flex-end;
-  align-items: center;*/
   @media all and (min-width: 768px) {
     display: none;
   }

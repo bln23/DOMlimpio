@@ -51,9 +51,44 @@ function init(){
   menu.addEventListener('click', menuTrigger);
 }
 
-function menuTrigger(){
+function menuTrigger() {
   var menuHidden = document.querySelector('.nav-list');
-  menuHidden.classList.toggle('active');
+  menuHidden.classList.toggle('active-menu');
 }
+  var initialNumber = 0;
+  var numberOne = document.querySelector('.stat-number-one');
+  var numberTwo = document.querySelector('.stat-number-two-desktop');
+  var numberThree = document.querySelector('.stat-number-three-desktop');
+  var numberOneTop = Math.ceil(20);
+  var numberTwoTop = Math.ceil(10);
+  var numberThreeTop = Math.ceil(50);
+
+  var tempOne = window.setInterval(function countNumberOne(){
+  numberOne.innerHTML = initialNumber;
+  var counter = initialNumber++;
+  if (counter === 20) {
+  clearInterval(temp);
+}
+},100);
+
+  var tempTwo = window.setInterval(function countNumberTwo(){
+  numberTwo.innerHTML = initialNumber;
+  var counter = initialNumber++;
+  if (counter === 10) {
+  clearInterval(temp);
+}
+},50);
+  var tempThree = window.setInterval(function countNumberThree(){
+  numberThree.innerHTML = initialNumber;
+  var counter = initialNumber++;
+  if (counter === 50) {
+  clearInterval(temp);
+}
+},80);
+
+
+
+
+
 
 init();
