@@ -15,35 +15,6 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-
-/*
-var boxAccordion = document.querySelector('.box-accordion');
-var i;
-
-for (i = 0; i < boxAccordion.length; i++) {
-    boxAccordion[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var contentAccordion = this.nextElementSibling;
-        if (contentAccordion.style.display === "block") {
-            contentAccordion.style.display = "none";
-        } else {
-            contentAccordion.style.display = "block";
-        }
-    });
-}
-
-function showContent(event) {
-  var content = document.querySelectorAll('.content-accordion');
-  var idButton = event.currentTarget.getAttribute('data-id');
-  content[idButton].classList.toggle('hidden');
-}
-
-var editButton = document.querySelectorAll('.box-accordion');
-for (var i = 0; i < editButton.length; i++) {
-  editButton[i].addEventListener('click', showContent);
-};
-*/
-
 //MENU TRIGGER
 
 function init(){
@@ -55,40 +26,33 @@ function menuTrigger() {
   var menuHidden = document.querySelector('.nav-list');
   menuHidden.classList.toggle('active-menu');
 }
-  var initialNumber = 0;
-  var numberOne = document.querySelector('.stat-number-one');
-  var numberTwo = document.querySelector('.stat-number-two-desktop');
-  var numberThree = document.querySelector('.stat-number-three-desktop');
-  var numberOneTop = Math.ceil(20);
-  var numberTwoTop = Math.ceil(10);
-  var numberThreeTop = Math.ceil(50);
-
-  var tempOne = window.setInterval(function countNumberOne(){
-  numberOne.innerHTML = initialNumber;
-  var counter = initialNumber++;
-  if (counter === 20) {
-  clearInterval(temp);
-}
-},100);
-
-  var tempTwo = window.setInterval(function countNumberTwo(){
-  numberTwo.innerHTML = initialNumber;
-  var counter = initialNumber++;
-  if (counter === 10) {
-  clearInterval(temp);
-}
-},50);
-  var tempThree = window.setInterval(function countNumberThree(){
-  numberThree.innerHTML = initialNumber;
-  var counter = initialNumber++;
-  if (counter === 50) {
-  clearInterval(temp);
-}
-},80);
-
-
-
-
-
 
 init();
+
+//CONTADORES
+
+var initialNumber = 0;
+  var elementOne = document.querySelector('.stat-number-one');
+  var elementTwo = document.querySelector('.stat-number-two-desktop');
+  var elementThree = document.querySelector('.stat-number-three-desktop');
+  var maxValues = [25,97,60];
+  var elements = [elementOne,elementTwo,elementThree];
+
+function counterElement(maxValue,element) {
+    var maximum = Math.max.apply(null, maxValue);
+    var counterInterval = window.setInterval(function countNumber(){
+      var counter = initialNumber++;
+
+      for (var i = 0; i < element.length; i++) {
+        if (counter <= maxValue[i]) {
+          element[i].innerHTML = counter;
+        }
+      }
+      if (counter > maximum) {
+        clearInterval(counterInterval);
+      }
+  },80);
+    return counterInterval;
+  }
+
+counterElement(maxValues,elements);
