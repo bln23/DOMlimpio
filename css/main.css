@@ -1,4 +1,4 @@
-/* --------- CORE ---------  *//* COLORS *//* amarillo *//* gris claro *//* negro *//* gris oscuro *//* blanco *//* ELEMENTS POSITION *//* FONT SIZE */* {
+@charset "UTF-8";/* --------- CORE ---------  *//* COLORS *//* amarillo *//* gris claro *//* negro *//* gris oscuro *//* blanco *//* ELEMENTS POSITION *//* FONT SIZE */* {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -46,6 +46,150 @@ body,div,span,applet,object,iframe {
   padding: 20px 40px;
   display: block;
   margin: 50px auto;
+}/* Slider */.slick-loading .slick-list {
+  background: #fff url("./ajax-loader.gif") center center no-repeat;
+}/* Icons *//* Arrows */.slick-prev,.slick-next {
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  top: 31%;
+  font-size: 18px;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  border: none;
+  outline: none;
+}
+
+.slick-prev:hover,.slick-prev:focus,.slick-next:hover,.slick-next:focus {
+  outline: none;
+  background: transparent;
+  color: transparent;
+}
+
+.slick-prev:hover:before,.slick-prev:focus:before,.slick-next:hover:before,.slick-next:focus:before {
+  opacity: 1;
+}
+
+.slick-prev.slick-disabled:before,.slick-next.slick-disabled:before {
+  opacity: 0.25;
+}
+
+.slick-prev:before,.slick-next:before {
+  font-family: "slick";
+  line-height: 1;
+  color: black;
+  opacity: 0.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev:hover:before,.slick-prev:focus:before,.slick-next:hover:before,.slick-next:focus:before {
+  opacity: 0.5;
+}
+
+.slick-next:before {
+  content: '→';
+}
+
+.slick-prev:before,.slick-next:before {
+  font-family: 'slick';
+  line-height: 1;
+  opacity: 0.5;
+  color: #000;
+  font-size: 18px;
+}
+
+.slick-prev {
+  left: 20px;
+}
+
+[dir="rtl"] .slick-prev {
+  left: auto;
+  right: 20px;
+}
+
+.slick-prev:before {
+  content: "←";
+}
+
+[dir="rtl"] .slick-prev:before {
+  content: "→";
+}
+
+.slick-next {
+  right: 20px;
+}
+
+[dir="rtl"] .slick-next {
+  left: -25px;
+}
+
+.slick-next:before {
+  content: "→";
+}
+
+[dir="rtl"] .slick-next:before {
+  content: "←";
+}/* Dots */.slick-dotted.slick-slider {
+  margin-bottom: 30px;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: -25px;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.slick-dots li button {
+  border: 0;
+  background: transparent;
+  display: block;
+  outline: none;
+  color: transparent;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.slick-dots li button:hover,.slick-dots li button:focus {
+  outline: none;
+}
+
+.slick-dots li button:hover:before,.slick-dots li button:focus:before {
+  opacity: 1;
+}
+
+.slick-dots li button:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "•";
+  font-family: "slick";
+  font-size: 6px;
+  text-align: center;
+  color: inherit;
+  opacity: 0.25;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots li.slick-active button:before {
+  color: inherit;
+  opacity: 0.75;
 }/* --------- LAYOUT /* --------- *//* ========
 HEADER
 =========*/header {
@@ -436,24 +580,27 @@ input::placeholder {
 }
 
 .slider .testimonys {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding: 2% 14%;
   margin: 0;
+  display: block;
   background-color: #f0f0f0;
-}
-
-.slider .testimonys .testimony:not(:first-child) {
-  display: none;
 }
 
 .slider .testimony-text {
   background-color: white;
   width: 100%;
-  padding: 20px;
+  padding: 40px;
+  display: inline-block;
 }
 
 .slider .image-testimony {
   border-radius: 75px;
   width: 70px;
+  display: block;
+  margin: auto;
 }
 
 .slider .testimony-person {
@@ -560,9 +707,33 @@ input::placeholder {
   width: 70%;
 }
 
+@font-face {
+  font-family:"slick";src:url("../fonts/slick.eot");src:url("../fonts/slick.eot?#iefix") format("embedded-opentype"), url("../fonts/slick.woff") format("woff"), url("../fonts/slick.ttf") format("truetype"), url("../fonts/slick.svg#slick") format("svg");font-weight:normal;font-style:normal;
+}
+
 @media all and (min-width: 768px) {
   body {
     font-size: 1.25rem;
+  }
+
+  .slick-prev,.slick-next {
+    top: 31%;
+  }
+
+  .slick-prev:before,.slick-next:before {
+    font-size: 30px;
+  }
+
+  .slick-prev:before,.slick-next:before {
+    font-size: 50;
+  }
+
+  .slick-prev {
+    left: 45px;
+  }
+
+  .slick-next {
+    right: 10px;
   }
 
   .nav-section {
@@ -775,37 +946,17 @@ input::placeholder {
   }
 
   .slider .testimonys {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     background: url("../images/comillas-abajo.png") 5% 0 no-repeat, url("../images/comillas-arriba.png") 93% 0 no-repeat;
     background-size: 96px;
     background-color: #f0f0f0;
   }
 
-  .slider .testimonys .testimony:not(:first-child) {
-    display: block;
-  }
-
-  .slider .testimonys .testimony:nth-child(2n) .testimony-person {
-    text-align: left;
-  }
-
-  .slider .testimonys .testimony:nth-child(2n + 1) .testimony-person {
-    text-align: right;
-  }
-
   .slider .testimony-text {
-    width: 95%;
+    width: 100%;
     font-size: 1rem;
   }
 
-  .slider .testimony-text .hidden {
-    display: inline-block;
-  }
-
   .slider .testimony-person {
-    text-align: right;
     padding: 30px 0;
     width: 95%;
   }
@@ -849,6 +1000,18 @@ input::placeholder {
 @media all and (min-width: 1024px) {
   body {
     font-size: 1.5rem;
+  }
+
+  :before {
+    font-size: 30px;
+  }
+
+  .slick-prev {
+    left: 100px;
+  }
+
+  .slick-next {
+    right: 50px;
   }
 
   header {
@@ -998,6 +1161,11 @@ input::placeholder {
     background-size: 136px;
   }
 
+  .slider .testimony-text {
+    width: 100%;
+    padding: 100px;
+  }
+
   .card-container {
     margin: 50px 70px;
   }
@@ -1020,6 +1188,12 @@ input::placeholder {
 
   .text-card {
     margin: 60px;
+  }
+}
+
+@media all and (min-width: 10248px) {
+  .slick-prev:before,.slick-next:before {
+    font-size: 50;
   }
 }
 

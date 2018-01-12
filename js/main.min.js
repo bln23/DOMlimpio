@@ -30,6 +30,11 @@ function menuTrigger(){
 
 init();
 
+$('.testimonys').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1
+});
 
 //CALCULATOR
 var hoursInput = document.querySelector('#hours-input');
