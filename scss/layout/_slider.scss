@@ -28,21 +28,16 @@
   }
 
   .testimonys{
+    display: flex;
     padding: 2% 14%;
     margin: 0;
+    display: block;
     background-color: $colorSecondary;
-    .testimony:not(:first-child) {
-      display: none;
-    }
     @media all and (min-width:768px) {
-      display: flex;
       background: url('../images/comillas-abajo.png') 5% 0 no-repeat,
       url('../images/comillas-arriba.png') 93% 0 no-repeat;
       background-size: 96px;
       background-color: $colorSecondary;
-      .testimony:not(:first-child) {
-        display: block;
-      }
     }
 
     @media all and (min-width:1024px) {
@@ -53,14 +48,18 @@
   .testimony-text {
     background-color: white;
     width: 100%;
-    padding: 10px;
+    padding: 40px;
+            display: inline-block;
     @media all and (min-width:768px) {
-      width: 95%;
+      width: 100%;
       font-size: 1rem;
-      .hidden {
-        display: inline-block;
-      }
     }
+
+    @media all and (min-width:1024px) {
+      width: 100%;
+      padding: 100px;
+    }
+
   }
 
   .image-testimony {

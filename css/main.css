@@ -54,8 +54,8 @@ body,div,span,applet,object,iframe {
   cursor: pointer;
   background: transparent;
   color: transparent;
-  top: 50%;
-  font-size: 26px;
+  top: 31%;
+  font-size: 18px;
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
   border: none;
@@ -78,7 +78,6 @@ body,div,span,applet,object,iframe {
 
 .slick-prev:before,.slick-next:before {
   font-family: "slick";
-  font-size: 26px;
   line-height: 1;
   color: black;
   opacity: 0.75;
@@ -99,16 +98,16 @@ body,div,span,applet,object,iframe {
   line-height: 1;
   opacity: 0.5;
   color: #000;
-  font-size: 30px;
+  font-size: 18px;
 }
 
 .slick-prev {
-  right: 130px;
+  left: 20px;
 }
 
 [dir="rtl"] .slick-prev {
   left: auto;
-  right: -20px;
+  right: 20px;
 }
 
 .slick-prev:before {
@@ -120,12 +119,11 @@ body,div,span,applet,object,iframe {
 }
 
 .slick-next {
-  left: 160px;
+  right: 20px;
 }
 
 [dir="rtl"] .slick-next {
   left: -25px;
-  right: auto;
 }
 
 .slick-next:before {
@@ -582,19 +580,20 @@ input::placeholder {
 }
 
 .slider .testimonys {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding: 2% 14%;
   margin: 0;
+  display: block;
   background-color: #f0f0f0;
-}
-
-.slider .testimonys .testimony:not(:first-child) {
-  display: none;
 }
 
 .slider .testimony-text {
   background-color: white;
   width: 100%;
-  padding: 10px;
+  padding: 40px;
+  display: inline-block;
 }
 
 .slider .image-testimony {
@@ -717,8 +716,12 @@ input::placeholder {
     font-size: 1.25rem;
   }
 
+  .slick-prev,.slick-next {
+    top: 31%;
+  }
+
   .slick-prev:before,.slick-next:before {
-    font-size: 50px;
+    font-size: 30px;
   }
 
   .slick-prev:before,.slick-next:before {
@@ -726,11 +729,11 @@ input::placeholder {
   }
 
   .slick-prev {
-    right: 50px;
+    left: 45px;
   }
 
   .slick-next {
-    left: 50px;
+    right: 10px;
   }
 
   .nav-section {
@@ -943,25 +946,14 @@ input::placeholder {
   }
 
   .slider .testimonys {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     background: url("../images/comillas-abajo.png") 5% 0 no-repeat, url("../images/comillas-arriba.png") 93% 0 no-repeat;
     background-size: 96px;
     background-color: #f0f0f0;
   }
 
-  .slider .testimonys .testimony:not(:first-child) {
-    display: block;
-  }
-
   .slider .testimony-text {
-    width: 95%;
+    width: 100%;
     font-size: 1rem;
-  }
-
-  .slider .testimony-text .hidden {
-    display: inline-block;
   }
 
   .slider .testimony-person {
@@ -1010,8 +1002,16 @@ input::placeholder {
     font-size: 1.5rem;
   }
 
-  .slick-prev:before,.slick-next:before {
-    font-size: 50px;
+  :before {
+    font-size: 30px;
+  }
+
+  .slick-prev {
+    left: 100px;
+  }
+
+  .slick-next {
+    right: 50px;
   }
 
   header {
@@ -1161,6 +1161,11 @@ input::placeholder {
     background-size: 136px;
   }
 
+  .slider .testimony-text {
+    width: 100%;
+    padding: 100px;
+  }
+
   .card-container {
     margin: 50px 70px;
   }
@@ -1189,14 +1194,6 @@ input::placeholder {
 @media all and (min-width: 10248px) {
   .slick-prev:before,.slick-next:before {
     font-size: 50;
-  }
-
-  .slick-prev {
-    right: 80px;
-  }
-
-  .slick-next {
-    left: 60px;
   }
 }
 

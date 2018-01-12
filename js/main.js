@@ -61,6 +61,6 @@ init();
 //animation slider
 $('.testimonys').slick({
   infinite: true,
-  slidesToShow: 2,
+  slidesToShow: 1,
   slidesToScroll: 1
 });

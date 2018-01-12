@@ -1,7 +1,7 @@
-@charset "UTF-8";
-
-// Default Variables
-
+// @charset "UTF-8";
+//
+// // Default Variables
+//
 // Slick icon entity codes outputs the following
 // "\2190" outputs ascii character "←"
 // "\2192" outputs ascii character "→"
@@ -58,91 +58,96 @@ $slick-opacity-not-active: 0.25 !default;
     }
 }
 
-/* Arrows */
+ /* Arrows */
 
-.slick-prev,
-.slick-next {
-    position: absolute;
-    display: block;
-    cursor: pointer;
-    background: transparent;
-    color: transparent;
-    top: 50%;
-    font-size: 26px;
-    -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-    border: none;
-    outline: none;
-    &:hover, &:focus {
-        outline: none;
-        background: transparent;
-        color: transparent;
-        &:before {
-            opacity: $slick-opacity-on-hover;
-        }
-    }
-    &.slick-disabled:before {
-        opacity: $slick-opacity-not-active;
-    }
-    &:before {
-        font-family: $slick-font-family;
-        font-size: 26px;
-        line-height: 1;
-        color: $slick-arrow-color;
-        opacity: $slick-opacity-default;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-    }
+ .slick-prev,
+ .slick-next {
+   position: absolute;
+   display: block;
+   cursor: pointer;
+   background: transparent;
+   color: transparent;
+   top: 31%;
+   font-size: 18px;
+   -webkit-transform: translate(0, -50%);
+   -ms-transform: translate(0, -50%);
+   transform: translate(0, -50%);
+   border: none;
+   outline: none;
+   @media all and (min-width:768px){
+     top: 31%;
+   }
 
-    @media all and (min-width:768px) {
-      &:before {
-          font-size: 50px;
-      }
 
-    }
-    @media all and (min-width:1024px){
-    &:before {
-        font-size: 50px;
-    }
-  }
+   &:hover, &:focus {
+     outline: none;
+     background: transparent;
+     color: transparent;
+     &:before {
+       opacity: $slick-opacity-on-hover;
+     }
+   }
+
+   &.slick-disabled:before {
+     opacity: $slick-opacity-not-active;
+   }
+   &:before {
+     font-family: $slick-font-family;
+     line-height: 1;
+     color: $slick-arrow-color;
+     opacity: $slick-opacity-default;
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+   }
+
+   @media all and (min-width:768px) {
+     &:before {
+       font-size: 30px;
+     }
+   }
 }
 
- .slick-prev:hover:before, .slick-prev:focus:before, .slick-next:hover:before, .slick-next:focus:before {
-  opacity: 0.5;
- }
+   @media all and (min-width:1024px){
+     &:before {
+       font-size: 30px;
+     }
+   }
 
- .slick-next:before {
-  content: '→';
-}
+   .slick-prev:hover:before, .slick-prev:focus:before, .slick-next:hover:before, .slick-next:focus:before {
+     opacity: 0.5;
+   }
 
-.slick-prev:before, .slick-next:before {
-  font-family: 'slick';
-  line-height: 1;
-  opacity: 0.5;
-  color: $colorTertiary;
-  font-size: 30px;
-  @media all and (min-width:768px){
-    font-size: 50;
-  }
-  @media all and (min-width:10248px){
-    font-size: 50;
-  }
+   .slick-next:before {
+     content: '→';
+   }
 
-}
+   .slick-prev:before, .slick-next:before {
+     font-family: 'slick';
+     line-height: 1;
+     opacity: 0.5;
+     color: $colorTertiary;
+     font-size: 18px;
+     @media all and (min-width:768px){
+       font-size: 50;
+     }
+     @media all and (min-width:10248px){
+       font-size: 50;
+     }
+   }
 
 .slick-prev {
-    right: 130px;
+    left: 20px;
 
     @media all and (min-width:768px){
-      right: 50px;
+      left: 45px;
     }
-    @media all and (min-width:10248px){
-      right: 80px;
+    @media all and (min-width:1024px){
+      left: 100px;
     }
+
     [dir="rtl"] & {
         left: auto;
-        right: -20px;
+        right: 20px;
     }
     &:before {
         content: $slick-prev-character;
@@ -153,17 +158,16 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-next {
-  left: 160px;
+  right: 20px;
     @media all and (min-width:768px){
-      left: 50px;
+      right: 10px;
     }
-    @media all and (min-width:10248px){
-      left: 60px;
+    @media all and (min-width:1024px){
+      right: 50px;
     }
 
     [dir="rtl"] & {
         left: -25px;
-        right: auto;
     }
     &:before {
         content: $slick-next-character;
