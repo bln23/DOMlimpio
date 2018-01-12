@@ -16,34 +16,6 @@ for (i = 0; i < acc.length; i++) {
 }
 
 
-/*
-var boxAccordion = document.querySelector('.box-accordion');
-var i;
-
-for (i = 0; i < boxAccordion.length; i++) {
-    boxAccordion[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var contentAccordion = this.nextElementSibling;
-        if (contentAccordion.style.display === "block") {
-            contentAccordion.style.display = "none";
-        } else {
-            contentAccordion.style.display = "block";
-        }
-    });
-}
-
-function showContent(event) {
-  var content = document.querySelectorAll('.content-accordion');
-  var idButton = event.currentTarget.getAttribute('data-id');
-  content[idButton].classList.toggle('hidden');
-}
-
-var editButton = document.querySelectorAll('.box-accordion');
-for (var i = 0; i < editButton.length; i++) {
-  editButton[i].addEventListener('click', showContent);
-};
-*/
-
 //MENU TRIGGER
 
 function init(){
@@ -58,13 +30,11 @@ function menuTrigger(){
 
 init();
 
-//animation slider
 $('.testimonys').slick({
   infinite: true,
   slidesToShow: 1,
   slidesToScroll: 1
 });
-
 
 //CALCULATOR
 var hoursInput = document.querySelector('#hours-input');
