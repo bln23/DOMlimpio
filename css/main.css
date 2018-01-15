@@ -660,20 +660,24 @@ input::placeholder {
   text-align: center;
 }
 
+.card-list {
+  margin: 60px 0;
+}
+
 .card-container {
   margin: 50px 0;
 }
 
 .card {
   background: #ffcd49;
-  padding: 20px 0;
+  padding: 5px 0;
   border-top: 1px solid #000;
 }
 
 .card-icon {
   width: 100px;
   display: block;
-  margin: 20px auto;
+  margin: 5px auto;
 }
 
 .text-card {
@@ -966,8 +970,12 @@ input::placeholder {
 }
 
 @media all and (min-width: 924px) {
+  .card-list {
+    margin: 100px 0;
+  }
+
   .card-container {
-    margin: 50px 50px;
+    margin: 50px 40px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -976,9 +984,9 @@ input::placeholder {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
   }
 
   .card {
@@ -988,7 +996,7 @@ input::placeholder {
   }
 
   .card-icon {
-    margin: 50px auto;
+    margin: 40px auto;
   }
 
   .hide {
@@ -1169,8 +1177,12 @@ input::placeholder {
     padding: 100px;
   }
 
+  .card-list {
+    margin: 170px 0;
+  }
+
   .card-container {
-    margin: 50px 70px;
+    margin: 50px 60px;
   }
 }
 
@@ -1186,7 +1198,7 @@ input::placeholder {
 
 @media all and (min-width: 1224px) {
   .card-container {
-    margin: 50px 120px;
+    margin: 50px 90px;
   }
 
   .text-card {
