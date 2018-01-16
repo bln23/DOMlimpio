@@ -1,7 +1,6 @@
 .about-us {
   display: flex;
   flex-direction: column;
-  margin-top:180px;
   margin-bottom: 180px;
 
   .image-about-us {
@@ -37,6 +36,7 @@
 .title-about {
   text-align: center;
   font-size: $text-size;
+  padding-bottom: 40px;
   @media all and (min-width:1024px) {
   font-size: $fifthTitleSize;
 }
