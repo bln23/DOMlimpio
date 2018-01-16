@@ -431,6 +431,9 @@ HEADER
 }
 
 .about-us .about-us-container {
+  display: block;
+  margin: auto;
+  text-align: justify;
   padding: 35px;
   font-size: 1rem;
 }
