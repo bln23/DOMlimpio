@@ -63,7 +63,6 @@ $slick-opacity-not-active: 0.25 !default;
  .slick-prev,
  .slick-next {
    position: absolute;
-   display: block;
    cursor: pointer;
    background: transparent;
    color: transparent;
@@ -74,8 +73,10 @@ $slick-opacity-not-active: 0.25 !default;
    transform: translate(0, -50%);
    border: none;
    outline: none;
+   display: none !important;
    @media all and (min-width:768px){
      top: 31%;
+     display: block !important;
    }
 
 
@@ -178,34 +179,33 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 /* Dots */
-
 .slick-dotted.slick-slider {
     margin-bottom: 30px;
+    display: none;
 }
 
 .slick-dots {
-    position: absolute;
-    bottom: -25px;
-    list-style: none;
-    display: block;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    width: 100%;
+  position: absolute;
+  bottom: 38%;
+  list-style: none !important;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  width: 63%;
     li {
+      display: none;
+        list-style: none;
         position: relative;
         display: inline-block;
         margin: 0 5px;
         padding: 0;
         cursor: pointer;
         button {
-            border: 0;
-            background: transparent;
-            display: block;
-            outline: none;
-            color: transparent;
-            padding: 5px;
-            cursor: pointer;
+              display: block;
+              outline: none;
+              color: black;
+              padding: 8px;
+              cursor: pointer;
             &:hover, &:focus {
                 outline: none;
                 &:before {
@@ -213,9 +213,6 @@ $slick-opacity-not-active: 0.25 !default;
                 }
             }
             &:before {
-                position: absolute;
-                top: 0;
-                left: 0;
                 content: $slick-dot-character;
                 font-family: $slick-font-family;
                 font-size: $slick-dot-size;

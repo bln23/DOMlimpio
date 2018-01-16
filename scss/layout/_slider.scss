@@ -9,7 +9,7 @@
   .title-slider {
     text-align: center;
     background-color: white;
-    padding: 70px;
+    padding: 23px;
     @media all and (min-width:768px) {
       background-color: $colorSecondary;
       margin-top: 8%;
@@ -29,7 +29,7 @@
 
   .testimonys{
     display: flex;
-    padding: 2% 14%;
+    padding: 7% 14%;
     margin: 0;
     display: block;
     background-color: $colorSecondary;
@@ -48,16 +48,24 @@
   .testimony-text {
     background-color: white;
     width: 100%;
-    padding: 40px;
-            display: inline-block;
+    font-size: 13px;
+    padding: 33px;
+    height: 380px;
+    text-align: center;
+    display: flex;
+    align-items: center;
     @media all and (min-width:768px) {
       width: 100%;
-      font-size: 1rem;
+      font-size: 12px;
+      padding: 20px 40px;
+      height: 268px;
     }
 
     @media all and (min-width:1024px) {
       width: 100%;
-      padding: 100px;
+      padding: 20px 50px;
+      font-size: 18px;
+      height: 350px;
     }
 
   }
@@ -72,6 +80,7 @@
   .testimony-person {
     background-color: $colorSecondary;
     padding: 30px;
+    margin: 14% 0;
     text-align: center;
     font-size: 1rem;
     @media all and (min-width:768px){
@@ -80,8 +89,8 @@
     }
   }
 
-  li {
+  li.testimony{
     list-style: none;
+    margin: 0 15px;
   }
-
 }
