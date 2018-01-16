@@ -35,7 +35,6 @@
   }
 
   .info-text {
-    text-align: center;
     @media all and (min-width:768px) {
         font-size: 1rem;
     }
@@ -47,8 +46,7 @@
   .card-legal {
     display: none;
     color: $colorTertiary;
-    padding: 5% 4%;
-    text-align: center;
+    padding: 30px;
     border: solid 1px $colorTertiary;
     font-size: 1rem;
 
