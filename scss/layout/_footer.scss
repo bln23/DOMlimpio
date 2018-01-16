@@ -2,24 +2,44 @@ footer {
   margin-top: 100px;
   background-color: $colorSecondary;
   padding: 40px 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+    @media all and (min-width:768px) {
+      display: flex;
+      justify-content: space-around;
+    }
 }
 
 .ul_footer {
   list-style: none;
   & li {
-    padding: 10px 0;
+        padding: 10px 0;
   }
   & a {
-    color: $colorQuaternary;
-    text-decoration: none;
-    cursor: pointer;
-    &:hover {
-      color: $colorPrimary;
-    }
+        color: $colorQuaternary;
+        text-decoration: none;
+        cursor: pointer;
+        &:hover {
+          color: $colorPrimary;
+        }
+      }
   }
+.secondfoot {
+
+  display: none;
+  @media all and (min-width:768px) {
+      display: block;
+      list-style: none;
+      & li {
+            padding: 10px 0;
+      }
+      & a {
+            color: $colorQuaternary;
+            text-decoration: none;
+            cursor: pointer;
+            &:hover {
+              color: $colorPrimary;
+            }
+          }
+    }
 }
 
 .map_footer {

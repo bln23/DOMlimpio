@@ -405,16 +405,16 @@ body,div,span,applet,object,iframe {
 .about-us .about-us-container {
   display: block;
   margin: auto;
-  text-align: justify;
-  padding: 35px;
   font-size: 1rem;
 }
 
 .title-about {
+  text-align: center;
   font-size: 1.3rem;
 }
 
 .text-about {
+  text-align: center;
   font-size: 1rem;
 }
 
@@ -734,13 +734,6 @@ footer {
   margin-top: 100px;
   background-color: #f0f0f0;
   padding: 40px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
 }
 
 .ul_footer {
@@ -759,6 +752,10 @@ footer {
 
 .ul_footer a:hover {
   color: #ffcd49;
+}
+
+.secondfoot {
+  display: none;
 }
 
 .map_footer {
@@ -1020,6 +1017,33 @@ footer {
   .title-acor {
     font-size: 3.5rem;
     margin-bottom: 100px;
+  }
+
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+
+  .secondfoot {
+    display: block;
+    list-style: none;
+  }
+
+  .secondfoot li {
+    padding: 10px 0;
+  }
+
+  .secondfoot a {
+    color: #bbbbbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .secondfoot a:hover {
+    color: #ffcd49;
   }
 }
 

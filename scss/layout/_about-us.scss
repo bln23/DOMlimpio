@@ -29,14 +29,13 @@
   .about-us-container {
     display: block;
     margin: auto;
-    text-align: justify;
-    padding: 35px;
     font-size: 1rem;
   }
 }
 
 
 .title-about {
+  text-align: center;
   font-size: $text-size;
   @media all and (min-width:1024px) {
   font-size: $fifthTitleSize;
@@ -44,6 +43,7 @@
 }
 
 .text-about {
+  text-align: center;
   font-size: 1rem;
   @media all and (min-width:1024px) {
   font-size: $text-size;
