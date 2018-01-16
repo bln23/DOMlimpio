@@ -6,7 +6,7 @@
 }
 
 .info-calculator {
-  margin-bottom: 10%;
+  padding: 60px 0;
   @media all and (min-width:768px) {
     margin-bottom: 5%;
   }
@@ -43,6 +43,7 @@
 .about-calculator-function {
   display: none;
   @media all and (min-width:1024px) {
+  margin: 0 120px;
    display: inline-block; }
 }
 
@@ -66,6 +67,7 @@
   @media all and (min-width:1024px) {
     display: flex;
     justify-content: center;
+    padding: 90px 0;
   }
 }
 

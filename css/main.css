@@ -502,7 +502,7 @@ HEADER
 }
 
 .info-calculator {
-  margin-bottom: 10%;
+  padding: 60px 0;
 }
 
 .tertiary-title {
@@ -706,13 +706,13 @@ input::placeholder {
 }
 
 .text-card-list {
-  font-size: 1.5rem;
+  font-size: 16px;
   text-align: center;
   margin: 70px 35px;
 }
 
 .title-card-list {
-  font-size: 2rem;
+  font-size: 24px;
   text-align: center;
   margin: 30px 35px;
 }
@@ -774,7 +774,7 @@ footer {
 
 @media all and (min-width: 768px) {
   body {
-    font-size: 1.25rem;
+    font-size: 18px;
   }
 
   .slick-prev,.slick-next {
@@ -1064,12 +1064,13 @@ footer {
 
   .text-card-list {
     margin: 50px 120px;
+    font-size: 16px;
   }
 }
 
 @media all and (min-width: 1024px) {
   body {
-    font-size: 1.5rem;
+    font-size: 20px;
   }
 
   :before {
@@ -1186,6 +1187,7 @@ footer {
   }
 
   .about-calculator-function {
+    margin: 0 120px;
     display: inline-block;
   }
 
@@ -1196,6 +1198,7 @@ footer {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    padding: 90px 0;
   }
 
   input {
@@ -1241,6 +1244,7 @@ footer {
 @media all and (min-width: 1124px) {
   .text-card-list {
     margin: 70px 210px;
+    font-size: 16px;
   }
 
   .line {
