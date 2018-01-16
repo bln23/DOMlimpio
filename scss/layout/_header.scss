@@ -1,6 +1,4 @@
-/* ========
-HEADER
-=========*/
+
 header {
   display: flex;
   flex-direction: row;
@@ -12,7 +10,6 @@ header {
   z-index: $upper;
   height: 4rem;
   padding: 0.5rem;
-  border-bottom: 1px solid $colorQuintary;
   @media all and (min-width: 1024px) {
     height: 5rem;
     padding: 0.7rem;
@@ -34,7 +31,7 @@ header {
   align-self: center;
   @media all and (min-width: 768px) {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     width: 100%;
   }
 }
@@ -93,14 +90,13 @@ header {
 }
 .item-nav-list:hover {
   color: $colorTertiary;
-  text-decoration: underline;
 }
 .nav-list-desktop {
   display: none;
   @media all and (min-width: 768px) {
     display: flex;
     justify-content: space-around;
-    width: 100%;
+    width: 50%;
     background-color: $colorPrimary;
     margin: 0;
     padding: 0;
@@ -110,20 +106,23 @@ header {
   @media all and (min-width: 768px) {
     display: flex;
     align-items: center;
+
   }
 }
 .item-nav-list-desktop {
   @media all and (min-width: 768px) {
+
+    transition: 0.3s ease;
     color: $colorQuintary;
     text-decoration: none;
     text-transform: uppercase;
     cursor: pointer;
-    font-weight: bold;
+    font-size: 1rem;
+    font-weight: $normalFontWeight;
   }
 }
 .item-nav-list-desktop:hover {
   @media all and (min-width: 768px) {
     color: $colorTertiary;
-    text-decoration: underline;
   }
 }

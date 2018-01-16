@@ -1,3 +1,13 @@
+
+.legal_section {
+  margin-top:50px;
+  margin-bottom: 90px;
+  @media all and (min-width:768px) {
+    margin-top:180px;
+    margin-bottom: 180px;
+  }
+}
+
 .legal {
   background-color: $colorTertiary;
   color: white;
@@ -74,11 +84,13 @@
     text-decoration: none;
     font-family: 'Ubuntu', sans-serif;
     background-color: transparent;
-    font-size: $fourthTitleSize;
+    font-size: $fifthTitleSize;
     font-weight: $normalFontWeight;
     display: block;
     @media all and (min-width:1024px) {
       display: none;
+      font-size: $fourthTitleSize;
+
     }
   }
 

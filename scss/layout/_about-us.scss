@@ -1,11 +1,13 @@
 .about-us {
   display: flex;
   flex-direction: column;
+  margin-top:180px;
+  margin-bottom: 180px;
 
   .image-about-us {
     width: 100%;
     height: 100%;
-    margin-top: 4rem;
+    margin-top: 0;
   }
 
   @media all and (min-width:1024px) {
@@ -20,7 +22,7 @@
     }
   }
 
-  > :nth-child(2n) {
+   >:nth-child(2n) {
     flex-direction: row-reverse;
   }
 
@@ -31,4 +33,19 @@
     padding: 35px;
     font-size: 1rem;
   }
+}
+
+
+.title-about {
+  font-size: $text-size;
+  @media all and (min-width:1024px) {
+  font-size: $fifthTitleSize;
+}
+}
+
+.text-about {
+  font-size: 1rem;
+  @media all and (min-width:1024px) {
+  font-size: $text-size;
+}
 }

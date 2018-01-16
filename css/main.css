@@ -6,11 +6,11 @@
 body,div,span,applet,object,iframe {
   margin: 0;
   font-family: 'Ubuntu', sans-serif;
-}/* --------- COMPONENTS ---------  *//* FONT FAMILY *//* FONT SIZE *//* FONT WEIGHT */.submit-input {
+}/* --------- COMPONENTS ---------  *//* FONT FAMILY *//* FONT SIZE *//* FONT WEIGHT *//* FONT WEIGHT */.submit-input {
   background-color: #ffcd49;
   color: #000;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 700;
 }
 
@@ -21,7 +21,7 @@ body,div,span,applet,object,iframe {
   text-decoration: none;
   font-family: 'Ubuntu', sans-serif;
   background-color: transparent;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: 400;
   display: inline-block;
 }
@@ -32,7 +32,7 @@ body,div,span,applet,object,iframe {
   text-decoration: none;
   font-family: 'Ubuntu', sans-serif;
   background-color: white;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: 400;
 }
 
@@ -40,7 +40,7 @@ body,div,span,applet,object,iframe {
   background-color: inherit;
   color: #000;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 700;
   border: 1px solid #000;
   padding: 20px 40px;
@@ -187,9 +187,7 @@ body,div,span,applet,object,iframe {
 .slick-dots li.slick-active button:before {
   color: inherit;
   opacity: 0.75;
-}/* --------- LAYOUT /* --------- *//* ========
-HEADER
-=========*/header {
+}/* --------- LAYOUT /* --------- */header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -207,7 +205,6 @@ HEADER
   z-index: 2;
   height: 4rem;
   padding: 0.5rem;
-  border-bottom: 1px solid #ffffff;
 }/* HEADER LEFT */.logo-img {
   width: 3rem;
   height: 3rem;
@@ -271,31 +268,23 @@ HEADER
 
 .item-nav-list:hover {
   color: #000;
-  text-decoration: underline;
 }
 
 .nav-list-desktop {
   display: none;
 }
 
-.hero .hero-img {
-  width: 100%;
-  height: auto;
-  display: block;
-  top: 6rem;
-  position: relative;
-}
-
-.hero .hero-container {
-  height: 65vh;
-  background-image: url("../images/mujeres2.jpg");
+.hero-container {
+  height: 75vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2))), url("../images/mujeres2.jpg");
+  background-image: linear-gradient(to bottom rgba(255, 0, 0, 0), rgba(0, 0, 0, 0.2)), url("../images/mujeres2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.hero .text-hero-container {
+.text-hero-container {
   background-color: #ffcd49;
-  height: 6rem;
+  height: 12rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -306,75 +295,52 @@ HEADER
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  color: #ffffff;
-  padding: 70px 0;
 }
 
-.hero .hero-text {
-  margin-top: 0;
-  margin-bottom: 0;
+.hero-text {
+  font-size: 1.15rem;
   text-align: center;
+  margin: auto;
+  width: 70%;
+  line-height: 1.5;
   color: #ffffff;
   padding: 0.2rem;
 }
 
-.hero .stat {
-  padding: 50px 0;
-}
-
-.hero .stat-list-one {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 6rem;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.hero .stat-list-two,.hero .stat-list-three {
-  display: none;
-}
-
-.hero .stat-num-one {
-  font-size: 40px;
-  width: auto;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.hero .stat-number-one {
-  color: #ffcd49;
-  margin: 0;
-}
-
-.hero .stat-text-one {
-  margin: 0;
-  margin-left: 0.2rem;
-}
-
-.hero .stat-num-two,.hero .stat-number-two,.hero .stat-text-two,.hero .stat-num-three,.hero .stat-number-three,.hero .stat-text-three,.hero .stat-par-two,.hero .stat-par-three {
-  display: none;
-}
-
-.hero .stat-par-one {
-  margin: 0;
+.stat {
   text-align: center;
+  margin-left: 25%;
+  padding: 35px 0;
 }
 
-.hero .stat-num-two-desktop,.hero .stat-num-three-desktop {
-  font-size: 40px;
+.stat-list-one,.stat-list-two,.stat-list-three {
+  width: 70%;
+}
+
+.stat-list-two,.stat-list-three {
+  display: none;
+}
+
+.stat-number-one,.stat-number-two-desktop,.stat-number-three-desktop {
+  display: inline-block;
+  font-size: 3.5rem;
+  color: #ffcd49;
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+.stat-text-one,.stat-text-two-desktop,.stat-text-three-desktop {
+  display: inline-block;
+  margin-top: 0;
+  margin-left: 0.2rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.stat-par-one,.stat-par-two-desktop,.stat-par-three-desktop {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1.3rem;
 }
 
 .intro-info {
@@ -383,8 +349,15 @@ HEADER
   border-bottom: 1px solid #000;
 }
 
+.about-us-text {
+  width: 70%;
+  margin: auto;
+}
+
 .intro-info-text {
   margin: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 300;
 }
 
 .info-img {
@@ -412,12 +385,14 @@ HEADER
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin-top: 180px;
+  margin-bottom: 180px;
 }
 
 .about-us .image-about-us {
   width: 100%;
   height: 100%;
-  margin-top: 4rem;
+  margin-top: 0;
 }
 
 .about-us > :nth-child(2n) {
@@ -433,6 +408,19 @@ HEADER
   text-align: justify;
   padding: 35px;
   font-size: 1rem;
+}
+
+.title-about {
+  font-size: 1.3rem;
+}
+
+.text-about {
+  font-size: 1rem;
+}
+
+.legal_section {
+  margin-top: 50px;
+  margin-bottom: 90px;
 }
 
 .legal {
@@ -480,12 +468,12 @@ HEADER
   padding: 5%;
   text-align: center;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: 400;
   text-decoration: none;
   font-family: 'Ubuntu', sans-serif;
   background-color: transparent;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 400;
   display: block;
 }
@@ -494,6 +482,7 @@ HEADER
   text-transform: uppercase;
 }/*BASIC CALCULATOR STYLE (text and box parameters) */.calculator {
   text-align: center;
+  font-size: 2rem;
 }
 
 .info-calculator {
@@ -501,18 +490,20 @@ HEADER
 }
 
 .tertiary-title {
+  color: #ffcd49;
   padding-top: 3%;
   font-size: 2rem;
-  color: #ffcd49;
+  margin: 0 35px;
 }
 
 .fourth-title {
-  font-size: 1.5rem;
-  color: #000;
+  font-size: 2rem;
 }
 
 .calc-subtitle {
-  font-weight: 500;
+  margin: 0 35px;
+  font-size: 1.3rem;
+  font-weight: 300;
   margin-top: 5%;
   margin-top: 0;
   margin-bottom: 2%;
@@ -579,7 +570,7 @@ input::placeholder {
 
 .slider .title-slider {
   text-align: center;
-  background-color: white;
+  background-color: #ffffff;
   padding: 23px;
 }
 
@@ -598,7 +589,7 @@ input::placeholder {
 }
 
 .slider .testimony-text {
-  background-color: white;
+  background-color: #ffffff;
   width: 100%;
   font-size: 13px;
   padding: 33px;
@@ -633,6 +624,9 @@ input::placeholder {
 }
 
 .accordion {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 300;
   background-color: #ffcd49;
   color: #000;
   cursor: pointer;
@@ -642,8 +636,6 @@ input::placeholder {
   border-bottom: 1.5px solid #000;
   text-align: left;
   outline: none;
-  font-size: 1.5rem;
-  font-weight: 500;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -674,7 +666,13 @@ input::placeholder {
 }
 
 .title-acor {
+  font-size: 2rem;
   text-align: center;
+  margin: 50px 35px;
+}
+
+.acc-text {
+  padding: 40px 0;
 }
 
 .card-list {
@@ -699,11 +697,13 @@ input::placeholder {
 
 .text-card {
   margin: 50px 30px;
+  font-size: 1.3rem;
 }
 
 .title-card {
   margin: 50px 0px;
   text-align: center;
+  font-size: 2rem;
 }
 
 .hide {
@@ -712,14 +712,15 @@ input::placeholder {
 
 .text-card-list {
   font-size: 16px;
+  font-weight: 300;
   text-align: center;
-  margin: 70px 35px;
+  margin: 20px 35px;
 }
 
 .title-card-list {
-  font-size: 24px;
   text-align: center;
-  margin: 30px 35px;
+  margin: 0px 35px;
+  font-size: 2rem;
 }
 
 .line {
@@ -807,9 +808,9 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
     width: 100%;
   }
 
@@ -835,7 +836,7 @@ footer {
     display: flex;
     -ms-flex-pack: distribute;
     justify-content: space-around;
-    width: 100%;
+    width: 50%;
     background-color: #ffcd49;
     margin: 0;
     padding: 0;
@@ -851,114 +852,76 @@ footer {
   }
 
   .item-nav-list-desktop {
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
     color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
     cursor: pointer;
-    font-weight: bold;
+    font-size: 1rem;
+    font-weight: 400;
   }
 
   .item-nav-list-desktop:hover {
     color: #000;
-    text-decoration: underline;
   }
 
-  .hero .hero-container {
-    height: 75vh;
+  .hero-container {
+    height: 90vh;
   }
 
-  .hero .hero-text {
-    margin-left: 1.65rem;
-    margin-right: 1.65rem;
+  .hero-container {
+    height: 100vh;
+    background-position-y: 25%;
   }
 
-  .hero .stat {
+  .hero-text {
+    text-align: center;
+    margin: auto;
+  }
+
+  .stat {
+    width: 85%;
+    margin: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    height: 6rem;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    margin: 50px auto;
-    padding: 0 20px;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    padding: 70px 0;
   }
 
-  .hero .stat-list-one {
-    height: initial;
-    display: inline-block;
-    text-align: center;
-    margin: 0;
+  .stat-list-one,.stat-list-two,.stat-list-three {
+    width: 30%;
   }
 
-  .hero .stat-list-two,.hero .stat-list-three {
-    display: inline-block;
-    text-align: center;
-    margin: 0;
+  .stat-number-one,.stat-number-two-desktop,.stat-number-three-desktop {
+    font-size: 4rem;
   }
 
-  .hero .stat-num-two-desktop,.hero .stat-num-three-desktop {
-    width: auto;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+  .stat-par-one,.stat-par-two-desktop,.stat-par-three-desktop {
+    font-size: 2rem;
   }
 
-  .hero .stat-number-two-desktop,.hero .stat-number-three-desktop {
-    color: #ffcd49;
-    margin: 0;
+  .intro-info {
+    border: none;
   }
 
-  .hero .stat-text-two-desktop,.hero .stat-text-three-desktop {
-    margin: 0;
-    margin-left: 0.2rem;
-  }
-
-  .hero .stat-par-two-desktop,.hero .stat-par-three-desktop {
-    margin: 0;
-    text-align: center;
+  .intro-info-container {
+    margin-left: 65px;
+    position: relative;
+    top: -250px;
+    width: 70%;
+    line-height: 1.5;
   }
 
   .intro-info-text {
+    font-size: 2rem;
     color: #ffffff;
-    position: absolute;
     text-align: left;
-    margin-left: 2.9rem;
-    margin-right: 20rem;
-    margin-top: -17rem;
-  }
-
-  .intro-par {
-    color: #ffffff;
-    position: absolute;
-    text-align: left;
-    margin-left: 2.9rem;
-    margin-right: 20rem;
-    display: block;
-    font-size: 1rem;
-    margin-top: -13rem;
-  }
-
-  .button-inf-org {
-    display: block;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border: none;
-    background-color: white;
-    font-size: 1.2rem;
-    padding: 1rem;
-    margin-left: 2.9rem;
-    margin-top: -5.8rem;
-    margin-bottom: 0;
-    position: absolute;
-    z-index: 1;
   }
 
   .text-button-org {
@@ -967,12 +930,17 @@ footer {
     text-decoration: none;
   }
 
+  .legal_section {
+    margin-top: 180px;
+    margin-bottom: 180px;
+  }
+
   .legal .info {
     padding: 12%;
   }
 
   .legal .info-title {
-    font-size: 2rem;
+    font-size: 3.5rem;
     padding-top: 0;
   }
 
@@ -984,8 +952,17 @@ footer {
     margin-bottom: 5%;
   }
 
+  .tertiary-title {
+    font-size: 3.5rem;
+  }
+
+  .fourth-title {
+    font-size: 2.5rem;
+    color: #000;
+  }
+
   .calc-subtitle {
-    margin-top: 3%;
+    font-size: 2rem;
   }
 
   .form-calculator {
@@ -1015,6 +992,7 @@ footer {
 
   .slider .testimony-title {
     margin-bottom: 5%;
+    font-size: 3.5rem;
   }
 
   .slider .testimonys {
@@ -1034,11 +1012,20 @@ footer {
     padding: 30px 0;
     width: 95%;
   }
+
+  .accordion {
+    font-size: 2rem;
+  }
+
+  .title-acor {
+    font-size: 3.5rem;
+    margin-bottom: 100px;
+  }
 }
 
 @media all and (min-width: 924px) {
   .card-list {
-    margin: 100px 0;
+    margin: 0;
   }
 
   .card-container {
@@ -1057,6 +1044,7 @@ footer {
   }
 
   .card {
+    height: 700px;
     width: 31.5%;
     padding: 30px 0;
     border: none;
@@ -1072,13 +1060,22 @@ footer {
 
   .text-card-list {
     margin: 50px 120px;
-    font-size: 16px;
+    font-size: 2rem;
+  }
+
+  .title-card-list {
+    font-size: 3.5rem;
+    margin: 30px 35px;
   }
 }
 
 @media all and (min-width: 1024px) {
   body {
     font-size: 20px;
+  }
+
+  .submit-input {
+    font-size: 2.5rem;
   }
 
   :before {
@@ -1103,39 +1100,57 @@ footer {
     height: 4rem;
   }
 
-  .hero .hero-container {
-    height: 90vh;
-  }
-
-  .hero .text-hero-container {
-    background-color: rgba(255, 205, 73, 0.5);
-    height: 20rem;
-    top: 23%;
+  .text-hero-container {
+    background-color: rgba(255, 205, 73, 0.75);
+    width: 80%;
+    height: 15rem;
     position: absolute;
+    top: 35%;
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    width: 80%;
   }
 
-  .hero .hero-text {
-    font-size: 2rem;
-    font-weight: 700;
+  .hero-text {
+    text-align: left;
+    font-size: 2.25rem;
+    font-weight: 500;
     color: #ffffff;
   }
 
-  .hero .stat {
-    margin: 50px auto;
-    padding: 0 30px;
+  .stat-list-two,.stat-list-three {
+    display: block;
   }
 
   .intro-info-text {
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: left;
+    margin-left: 2.9rem;
+    margin-right: 20rem;
     margin-top: -17rem;
   }
 
   .intro-par {
-    font-size: 1.2rem;
-    margin-top: -13rem;
+    color: #ffffff;
+    text-align: left;
+    margin-left: 2.9rem;
+    margin-right: 20rem;
+    display: block;
+    font-size: 1.3rem;
+  }
+
+  .button-inf-org {
+    display: block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    background-color: white;
+    font-size: 1.3rem;
+    padding: 1rem;
+    margin-left: 2.9rem;
+    font-family: 'Ubuntu', sans-serif;
   }
 
   .about-us > * {
@@ -1153,6 +1168,14 @@ footer {
     height: 50%;
   }
 
+  .title-about {
+    font-size: 2rem;
+  }
+
+  .text-about {
+    font-size: 1.3rem;
+  }
+
   .legal .info {
     grid-row: 1 / 4;
     padding: 20%;
@@ -1165,7 +1188,7 @@ footer {
   }
 
   .legal .info-title {
-    font-size: 2.5rem;
+    font-size: 4rem;
   }
 
   .legal .info-text {
@@ -1178,6 +1201,7 @@ footer {
 
   .legal .see-input {
     display: none;
+    font-size: 2.5rem;
   }
 
   .legal .see-input-cards {
@@ -1188,10 +1212,6 @@ footer {
 
   .info-calculator {
     margin-bottom: 3%;
-  }
-
-  .calc-subtitle {
-    margin-top: 2%;
   }
 
   .about-calculator-function {
@@ -1242,21 +1262,12 @@ footer {
     height: 350px;
   }
 
-  .card-list {
-    margin: 170px 0;
-  }
-
   .card-container {
     margin: 50px 60px;
   }
 }
 
 @media all and (min-width: 1124px) {
-  .text-card-list {
-    margin: 70px 210px;
-    font-size: 16px;
-  }
-
   .line {
     width: 60%;
   }
@@ -1269,6 +1280,7 @@ footer {
 
   .text-card {
     margin: 60px;
+    height: 220px;
   }
 }
 

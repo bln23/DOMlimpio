@@ -1,5 +1,8 @@
 
 .accordion {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: $text-size;
+  font-weight:$lightFontWeight;
   background-color: $colorPrimary;
   color: $colorTertiary;
   cursor: pointer;
@@ -9,9 +12,12 @@
   border-bottom: 1.5px solid $colorTertiary;
   text-align: left;
   outline: none;
-  font-size: $fourthTitleSize;
-  font-weight: $mediumFontWeight;
   transition: 0.4s;
+  @media all and (min-width:768px) {
+      font-size: $fifthTitleSize;
+  }
+
+
 }
 
 .accordion:hover {
@@ -40,5 +46,18 @@
 
 
 .title-acor {
+  font-size: $fifthTitleSize;
   text-align: center;
+  margin: 50px 35px;
+
+  @media all and (min-width:768px) {
+    font-size: $thirdTitleSize;
+    margin-bottom: 100px;
+
+  }
+}
+
+
+.acc-text {
+  padding: 40px 0;
 }

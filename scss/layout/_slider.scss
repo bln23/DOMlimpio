@@ -6,26 +6,41 @@
     background-color: $colorSecondary;
   }
 
-  .title-slider {
-    text-align: center;
-    background-color: white;
-    padding: 23px;
-    @media all and (min-width:768px) {
-      background-color: $colorSecondary;
-      margin-top: 8%;
-      padding: 50px;
+
+    .title-slider {
+      text-align: center;
+      background-color: $colorQuintary;
+      padding: 23px;
+      @media all and (min-width:768px) {
+        background-color: $colorSecondary;
+        margin-top: 8%;
+        padding: 50px;
+      }
     }
-  }
+  // .title-slider {
+  //   text-align: center;
+  //   background-color: white;
+  //   padding: 70px;
+  //   @media all and (min-width:768px) {
+  //     background-color: $colorSecondary;
+  //     margin-top: 8%;
+  //     padding: 50px;
+  //   }
+  // }
+
+//
 
   .testimony-title {
-    font-size: $thirdTitleSize;
+    font-size: $fifthTitleSize;
     @media all and (min-width:768px) {
       margin-bottom: 5%;
+      font-size: $thirdTitleSize;
     }
     @media all and (min-width:1024px) {
       margin-bottom: 3%;
     }
   }
+
 
   .testimonys{
     display: flex;
@@ -46,7 +61,7 @@
   }
 
   .testimony-text {
-    background-color: white;
+    background-color: $colorQuintary;
     width: 100%;
     font-size: 13px;
     padding: 33px;

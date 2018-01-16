@@ -3,18 +3,41 @@
   display: block;
   text-align: center;
   border-bottom: 1px solid $colorTertiary;
+  @media all and (min-width: 768px) {
+    border: none;
+  }
 }
+
+.intro-info-container {
+  @media all and (min-width: 768px) {
+   margin-left: 65px;
+   position: relative;
+   top: -250px;
+   width: 70%;
+   line-height: $lineHeightDesktop;
+  }
+}
+
+.about-us-text {
+  width: 70%;
+  margin: auto;
+}
+
 .intro-info-text {
   margin: 1.5rem;
+  font-size: $text-size;
+  font-weight: $lightFontWeight;
   @media all and (min-width: 768px) {
+    font-size: $fifthTitleSize;
     color: $colorQuintary;
-    position: absolute;
+    text-align: left;
+  }
+  @media all and (min-width: 1024px) {
+    font-size: $fifthTitleSize;
+    color: $colorQuintary;
     text-align: left;
     margin-left: 2.9rem;
     margin-right: 20rem;
-    margin-top: -17rem;
-  }
-  @media all and (min-width: 1024px) {
     margin-top: -17rem;
   }
 }
@@ -24,35 +47,26 @@
 }
 .intro-par {
   display: none;
-  @media all and (min-width: 768px) {
+  @media all and (min-width: 1024px) {
     color: $colorQuintary;
-    position: absolute;
     text-align: left;
     margin-left: 2.9rem;
     margin-right: 20rem;
     display: block;
-    font-size: 1rem;
-    margin-top: -13rem;
-  }
-  @media all and (min-width: 1024px) {
-    font-size: 1.2rem;
-    margin-top: -13rem;
+    font-size: $text-size;
   }
 }
 .button-inf-org {
   display: none;
-  @media all and (min-width: 768px) {
+  @media all and (min-width: 1024px) {
     display: block;
     appearance: none;
     border: none;
     background-color: white;
-    font-size: 1.2rem;
+    font-size: $text-size;
     padding: 1rem;
     margin-left: 2.9rem;
-    margin-top: -5.8rem;
-    margin-bottom: 0;
-    position: absolute;
-    z-index: $lower;
+    font-family: 'Ubuntu', sans-serif;
   }
 }
   .text-button-org {

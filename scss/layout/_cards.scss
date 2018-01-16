@@ -1,10 +1,7 @@
 .card-list {
   margin: 60px 0;
   @media all and (min-width: 924px) {
-    margin: 100px 0;
-  }
-  @media all and (min-width: 1024px) {
-    margin: 170px 0;
+    margin: 0;
   }
 }
 
@@ -29,7 +26,8 @@
  background: $colorPrimary;
  padding: 5px 0;
  border-top: 1px solid $colorTertiary;
- @media all and (min-width: 924px) {
+ @media all and (min-width: 924px){
+   height: 700px;
    width: 31.5%;
    padding: 30px 0;
    border: none;
@@ -47,14 +45,17 @@
 
 .text-card {
   margin: 50px 30px;
+  font-size: $text-size;
   @media all and (min-width: 1224px) {
       margin: 60px;
+      height: 220px;
   }
 }
 
 .title-card {
   margin: 50px 0px;
   text-align: center;
+  font-size: $fifthTitleSize;
 }
 
 .hide{
@@ -67,22 +68,26 @@
 
 .text-card-list {
   font-size: 16px;
+  font-weight:$lightFontWeight;
   text-align: center;
-  margin: 70px 35px;
+  margin: 20px 35px;
   @media all and (min-width: 924px) {
     margin: 50px 120px;
-    font-size: 16px;
-  }
-  @media all and (min-width: 1124px) {
-    margin: 70px 210px;
-    font-size: 16px;
+    font-size: $fifthTitleSize;
+
   }
 }
 
 .title-card-list {
-  font-size: 24px;
   text-align: center;
-  margin: 30px 35px;
+  margin: 0px 35px;
+  font-size: $fifthTitleSize;
+  @media all and (min-width: 924px) {
+    font-size: $thirdTitleSize;
+    margin: 30px 35px;
+
+  }
+
 }
 
 .line {

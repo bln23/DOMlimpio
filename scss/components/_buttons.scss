@@ -2,8 +2,13 @@
   background-color: $colorPrimary;
   color: $colorTertiary;
   cursor: pointer;
-  font-size: $fourthTitleSize;
+  font-size: $text-size;
+
+
   font-weight: $boldFontWeight;
+@media all and (min-width:1024px) {
+    font-size: $fourthTitleSize;
+}
 }
 
 .see-input-cards {
@@ -32,7 +37,7 @@
   background-color: inherit;
   color: $colorTertiary;
   cursor: pointer;
-  font-size: $fourthTitleSize;
+  font-size: $fifthTitleSize;
   font-weight: $boldFontWeight;
   border: 1px solid $colorTertiary;
   padding: 20px 40px;

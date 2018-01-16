@@ -3,6 +3,7 @@
 
 .calculator {
   text-align: center;
+  font-size: $fifthTitleSize;
 }
 
 .info-calculator {
@@ -16,27 +17,36 @@
 }
 
 .tertiary-title {
-  padding-top: 3%;
-  font-size: $thirdTitleSize;
   color: $colorPrimary;
+  padding-top: 3%;
+  font-size:$fifthTitleSize;
+  margin: 0 35px;
+  @media all and (min-width:768px) {
+    font-size: $thirdTitleSize;
+  }
+
 }
 
 .fourth-title {
+  font-size: $fifthTitleSize;
+  @media all and (min-width:768px) {
   font-size: $fourthTitleSize;
   color: $colorTertiary;
 }
+}
+
 
 .calc-subtitle {
-  font-weight: $mediumFontWeight;
+  margin: 0 35px;
+  font-size: $text-size;
+  font-weight:$lightFontWeight;
   margin-top: 5%;
   margin-top: 0;
   margin-bottom: 2%;
   @media all and (min-width:768px) {
-    margin-top: 3%;
-  }
-  @media all and (min-width:1024px) {
-    margin-top: 2%;
-  }
+  font-size: $fifthTitleSize;
+
+ }
 }
 
 
@@ -119,6 +129,5 @@ input::placeholder {
   padding-top: 4%;
   @media all and (min-width:1024px) {
     padding-top: 10%;
-
   }
 }
