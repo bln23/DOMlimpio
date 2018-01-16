@@ -385,7 +385,6 @@ body,div,span,applet,object,iframe {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin-top: 180px;
   margin-bottom: 180px;
 }
 
