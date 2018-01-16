@@ -310,6 +310,7 @@ HEADER
   -ms-flex-pack: center;
   justify-content: center;
   color: #ffffff;
+  padding: 70px 0;
 }
 
 .hero .hero-text {
@@ -318,6 +319,10 @@ HEADER
   text-align: center;
   color: #ffffff;
   padding: 0.2rem;
+}
+
+.hero .stat {
+  padding: 50px 0;
 }
 
 .hero .stat-list-one {
@@ -342,6 +347,7 @@ HEADER
 }
 
 .hero .stat-num-one {
+  font-size: 40px;
   width: auto;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -368,6 +374,10 @@ HEADER
 .hero .stat-par-one {
   margin: 0;
   text-align: center;
+}
+
+.hero .stat-num-two-desktop,.hero .stat-num-three-desktop {
+  font-size: 40px;
 }
 
 .intro-info {
@@ -864,8 +874,11 @@ footer {
     -ms-flex-align: center;
     align-items: center;
     height: 6rem;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 50px auto;
+    padding: 0 20px;
   }
 
   .hero .stat-list-one {
@@ -1103,7 +1116,8 @@ footer {
   }
 
   .hero .stat {
-    margin: auto;
+    margin: 50px auto;
+    padding: 0 30px;
   }
 
   .intro-info-text {
