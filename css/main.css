@@ -307,6 +307,7 @@ HEADER
   -ms-flex-pack: center;
   justify-content: center;
   color: #ffffff;
+  padding: 70px 0;
 }
 
 .hero .hero-text {
@@ -315,6 +316,10 @@ HEADER
   text-align: center;
   color: #ffffff;
   padding: 0.2rem;
+}
+
+.hero .stat {
+  padding: 50px 0;
 }
 
 .hero .stat-list-one {
@@ -339,6 +344,7 @@ HEADER
 }
 
 .hero .stat-num-one {
+  font-size: 40px;
   width: auto;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -365,6 +371,10 @@ HEADER
 .hero .stat-par-one {
   margin: 0;
   text-align: center;
+}
+
+.hero .stat-num-two-desktop,.hero .stat-num-three-desktop {
+  font-size: 40px;
 }
 
 .intro-info {
@@ -418,6 +428,9 @@ HEADER
 }
 
 .about-us .about-us-container {
+  display: block;
+  margin: auto;
+  text-align: justify;
   padding: 35px;
   font-size: 1rem;
 }
@@ -445,15 +458,10 @@ HEADER
   text-transform: uppercase;
 }
 
-.legal .info-text {
-  text-align: center;
-}
-
 .legal .card-legal {
   display: none;
   color: #000;
-  padding: 5% 4%;
-  text-align: center;
+  padding: 30px;
   border: solid 1px #000;
   font-size: 1rem;
 }
@@ -489,7 +497,7 @@ HEADER
 }
 
 .info-calculator {
-  margin-bottom: 10%;
+  padding: 60px 0;
 }
 
 .tertiary-title {
@@ -703,13 +711,13 @@ input::placeholder {
 }
 
 .text-card-list {
-  font-size: 1.5rem;
+  font-size: 16px;
   text-align: center;
   margin: 70px 35px;
 }
 
 .title-card-list {
-  font-size: 2rem;
+  font-size: 24px;
   text-align: center;
   margin: 30px 35px;
 }
@@ -771,7 +779,7 @@ footer {
 
 @media all and (min-width: 768px) {
   body {
-    font-size: 1.25rem;
+    font-size: 18px;
   }
 
   .slick-prev,.slick-next {
@@ -872,8 +880,11 @@ footer {
     -ms-flex-align: center;
     align-items: center;
     height: 6rem;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 50px auto;
+    padding: 0 20px;
   }
 
   .hero .stat-list-one {
@@ -1061,12 +1072,13 @@ footer {
 
   .text-card-list {
     margin: 50px 120px;
+    font-size: 16px;
   }
 }
 
 @media all and (min-width: 1024px) {
   body {
-    font-size: 1.5rem;
+    font-size: 20px;
   }
 
   :before {
@@ -1113,7 +1125,8 @@ footer {
   }
 
   .hero .stat {
-    margin: auto;
+    margin: 50px auto;
+    padding: 0 30px;
   }
 
   .intro-info-text {
@@ -1182,6 +1195,7 @@ footer {
   }
 
   .about-calculator-function {
+    margin: 0 120px;
     display: inline-block;
   }
 
@@ -1192,6 +1206,7 @@ footer {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    padding: 90px 0;
   }
 
   input {
@@ -1239,6 +1254,7 @@ footer {
 @media all and (min-width: 1124px) {
   .text-card-list {
     margin: 70px 210px;
+    font-size: 16px;
   }
 
   .line {

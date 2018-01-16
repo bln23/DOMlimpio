@@ -25,6 +25,7 @@
     flex-direction: column;
     justify-content: center;
     color: $colorQuintary;
+    padding: 70px 0;
     @media all and (min-width: 1024px) {
       background-color: rgba(255,205,73,0.5);
       height: 20rem;
@@ -52,14 +53,18 @@
     }
   }
   .stat {
+    padding: 50px 0;
     @media all and (min-width: 768px) {
       display: flex;
       align-items: center;
       height: 6rem;
-      justify-content: space-around;
+      justify-content: space-between;
+      margin: 50px auto;
+      padding: 0 20px;
     }
     @media all and (min-width: 1024px) {
-      margin: auto;
+      margin: 50px auto;
+      padding: 0 30px;
     }
   }
   .stat-list-one {
@@ -84,6 +89,7 @@
     }
   }
   .stat-num-one {
+    font-size: 40px;
     width: auto;
     display: inline-flex;
     align-items: center;
@@ -104,6 +110,7 @@
     text-align: center;
   }
   .stat-num-two-desktop,.stat-num-three-desktop {
+    font-size: 40px;
     @media all and (min-width: 768px) {
       width: auto;
       display: inline-flex;
